@@ -1023,6 +1023,101 @@ end{center}
 \end_layout
 
 \begin_layout Subsubsection
+\begin_inset Formula $f(x)=|x|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+    axis lines=middle,
+\end_layout
+
+\begin_layout Plain Layout
+
+    grid=none,
+\end_layout
+
+\begin_layout Plain Layout
+
+    xlabel={$x$},
+ ylabel={$y$},
+\end_layout
+
+\begin_layout Plain Layout
+
+    width=15cm,
+ height=6cm
+\end_layout
+
+\begin_layout Plain Layout
+
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[blue,
+ thick,
+ samples=200,
+ domain=-3:3] {abs(x)};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
 \begin_inset Formula $f(x)=ln\,x$
 \end_inset
 
@@ -1088,7 +1183,7 @@ begin{axis}[
 addplot[blue,
  thick,
  samples=200,
- domain=-3:3] {ln(x)};
+ domain=-3:10] {ln(x)};
 \end_layout
 
 \begin_layout Plain Layout
@@ -1118,7 +1213,7 @@ end{center}
 \end_layout
 
 \begin_layout Subsubsection
-\begin_inset Formula $f(x)=\frac{1}{lnx}$
+\begin_inset Formula $f(x)=\frac{1}{ln|x|}$
 \end_inset
 
 
@@ -1183,7 +1278,7 @@ begin{axis}[
 addplot[blue,
  thick,
  samples=200,
- domain=-3:3] {1/ln(x)};
+ domain=-3:3] {1/ln(abs(x))};
 \end_layout
 
 \begin_layout Plain Layout
@@ -1210,6 +1305,678 @@ end{center}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $f(x)=\sqrt{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+    axis lines=middle,
+\end_layout
+
+\begin_layout Plain Layout
+
+    grid=none,
+\end_layout
+
+\begin_layout Plain Layout
+
+    xlabel={$x$},
+ ylabel={$y$},
+\end_layout
+
+\begin_layout Plain Layout
+
+    width=15cm,
+ height=6cm
+\end_layout
+
+\begin_layout Plain Layout
+
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[blue,
+ thick,
+ samples=200,
+ domain=-3:3] {sqrt(x)};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $f(x)=sin\,x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+    axis lines=middle,
+\end_layout
+
+\begin_layout Plain Layout
+
+    grid=none,
+\end_layout
+
+\begin_layout Plain Layout
+
+    xlabel={$x$},
+ ylabel={$y$},
+\end_layout
+
+\begin_layout Plain Layout
+
+    width=15cm,
+ height=6cm
+\end_layout
+
+\begin_layout Plain Layout
+
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[blue,
+ thick,
+ trig format=rad,
+ samples=200,
+ domain=-6:6] {sin(x)};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $f(x)=cos\,x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+    axis lines=middle,
+\end_layout
+
+\begin_layout Plain Layout
+
+    grid=none,
+\end_layout
+
+\begin_layout Plain Layout
+
+    xlabel={$x$},
+ ylabel={$y$},
+\end_layout
+
+\begin_layout Plain Layout
+
+    width=15cm,
+ height=6cm
+\end_layout
+
+\begin_layout Plain Layout
+
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[blue,
+ thick,
+ trig format=rad,
+ samples=200,
+ domain=-6:6] {cos(x)};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $f(x)=tan\,x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+    axis lines=middle,
+\end_layout
+
+\begin_layout Plain Layout
+
+    grid=none,
+\end_layout
+
+\begin_layout Plain Layout
+
+    xlabel={$x$},
+ ylabel={$y$},
+\end_layout
+
+\begin_layout Plain Layout
+
+    width=15cm,
+ height=6cm
+\end_layout
+
+\begin_layout Plain Layout
+
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[blue,
+ thick,
+ trig format=rad,
+ samples=200,
+ domain=-2:2] {tan(x)};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $f(x)=arcsin\,x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+    axis lines=middle,
+\end_layout
+
+\begin_layout Plain Layout
+
+    grid=none,
+\end_layout
+
+\begin_layout Plain Layout
+
+    xlabel={$x$},
+ ylabel={$y$},
+\end_layout
+
+\begin_layout Plain Layout
+
+    width=15cm,
+ height=6cm
+\end_layout
+
+\begin_layout Plain Layout
+
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[blue,
+ thick,
+ samples=200,
+ domain=-1:1] {asin(x)};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $f(x)=arccos\,x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+    axis lines=middle,
+\end_layout
+
+\begin_layout Plain Layout
+
+    grid=none,
+\end_layout
+
+\begin_layout Plain Layout
+
+    xlabel={$x$},
+ ylabel={$y$},
+\end_layout
+
+\begin_layout Plain Layout
+
+    width=15cm,
+ height=6cm
+\end_layout
+
+\begin_layout Plain Layout
+
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[blue,
+ thick,
+ samples=200,
+ domain=-1:1] {acos(x)};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $f(x)=arctan\,x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+    axis lines=middle,
+\end_layout
+
+\begin_layout Plain Layout
+
+    grid=none,
+\end_layout
+
+\begin_layout Plain Layout
+
+    xlabel={$x$},
+ ylabel={$y$},
+\end_layout
+
+\begin_layout Plain Layout
+
+    width=15cm,
+ height=6cm
+\end_layout
+
+\begin_layout Plain Layout
+
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[blue,
+ thick,
+ samples=200,
+ domain=-10:10] {atan(x)};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Studio della convergenza
 \end_layout
 
 \end_body
