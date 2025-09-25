@@ -1,0 +1,1216 @@
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\setcounter{tocdepth}{3}
+\end_preamble
+\options a4paper
+\use_default_options true
+\maintain_unincluded_children no
+\language italian
+\language_package default
+\inputencoding utf8
+\fontencoding auto
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement class
+\float_alignment class
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize a4
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_formatted_ref 0
+\use_minted 0
+\use_lineno 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 2cm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tablestyle default
+\tracking_changes false
+\output_changes false
+\change_bars false
+\postpone_fragile_content true
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Manuale - Analisi 1
+\begin_inset Newline newline
+\end_inset
+
+Ingegneria Informatica
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Concetti di base
+\end_layout
+
+\begin_layout Section
+Derivate
+\end_layout
+
+\begin_layout Subsection
+Derivate fondamentali
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D[x^{n}]=nx^{n-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D[x]=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D[\frac{1}{x}]=-\frac{1}{x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D[\sqrt{x}]=\frac{1}{2\sqrt{x}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D[a^{x}]=a^{x}*ln|a|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D[e^{x}]=e^{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D[log_{a}x]=\frac{1}{x*ln\,a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D[ln\,x]=\frac{1}{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D[sin\,x]=cos\,x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D[cos\,x]=-sin\,x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D[tan\,x]=\frac{1}{cos^{2}x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D[cotan\,x]=-\frac{1}{sin^{2}x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D[arcsin\,x]=\frac{1}{\sqrt{1-x^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D[arccos\,x]=-\frac{1}{\sqrt{1-x^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D[arctan\,x]=\frac{1}{1+x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Regole di derivazione
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D[f(x)+g(x)]=f'(x)+g'(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D[k*f(x)]=k*f'(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D[f(x)*g(x)]=f'(x)*g(x)+f(x)*g'(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $D[\frac{f(x)}{g(x)}]=\frac{f'(x)*g(x)-f(x)*g'(x)}{g(x)^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Integrali
+\end_layout
+
+\begin_layout Subsection
+Indefiniti
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int x^{\alpha}dx=\frac{x^{\alpha+1}}{\alpha+1}+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{1}{x}dx=ln|x|+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int e^{x}dx=e^{x}+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int a^{x}dx=\frac{a^{x}}{ln\,a}+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int sin\,x\,dx=-cos\,x+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int cos\,x\,dx=sin\,x+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{1}{sin^{2}x}dx=-cot\,x+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{1}{cos^{2}x}dx=tan\,x+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{1}{\sqrt{1-x^{2}}}dx=arcsin\,x+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{1}{\sqrt{1+x^{2}}}dx=arctan\,x+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int f(x)^{\alpha}*f'(x)\,dx=\frac{f(x)^{\alpha+1}}{\alpha+1}+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{f'(x)}{f(x)}dx=ln|f(x)|+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int e^{f(x)}*f'(x)\,dx=e^{f(x)}+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int a^{f(x)}*f'(x)\,dx=\frac{a^{f(x)}}{ln\,a}+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int sin\,f(x)*f'(x)\,dx=-cos\,f(x)+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int cos\,f(x)*f'(x)\,dx=sin\,f(x)+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{f'(x)}{cos^{2}f(x)}dx=tan\,f(x)+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{f'(x)}{sin^{2}f(x)}dx=-cot\,f(x)+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{f'(x)}{\sqrt{1-f(x)^{2}}}dx=arcsin\,f(x)+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{f'(x)}{1+f(x)^{2}}dx=arctan\,f(x)+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int f(x)*g'(x)\,dx=f(x)*g(x)-\int f'(x)*g(x)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\int\frac{f'(x)}{k^{2}+f(x)^{2}}dx=\frac{1}{k}arctan(\frac{f(x)}{k})+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Pils
+\end_layout
+
+\begin_layout Standard
+Durante lo svolgimento potrei trovarmi i seguenti casi che sono più complessi,
+ riassunti in 3 macro-casi possono essere risolti in modo più semplice.
+\begin_inset Newline newline
+\end_inset
+
+Caso:
+\end_layout
+
+\begin_layout Itemize
+Grado D 
+\begin_inset Formula $<$
+\end_inset
+
+ Grado N:
+ Uso la divisione.
+\end_layout
+
+\begin_layout Itemize
+Denominatore:
+ 1° Grado:
+ 
+\begin_inset Formula $\frac{f'(x)}{f(x)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Denominatore 2° Grado:
+ Dopo aver calcolato il 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ ho i tre seguenti casi:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\Delta=0$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\int f'(x)*f(x)^{\alpha}dx=\frac{f(x)^{\alpha+1}}{\alpha+1}+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Divisione 
+\begin_inset Formula $A/B$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\Delta<0$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\int\frac{f'(x)}{k^{2}+f(x)^{2}}dx=\frac{1}{k}arctan(\frac{f(x)}{k})+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\int\frac{\text{numeratore}+a-a}{\text{denominatore}}dx$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset Formula $\Delta>0$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Divisione 
+\begin_inset Formula $A/B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\int\frac{f'(x)}{f(x)}dx=ln|f(x)|+c$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Part
+Studio di Funzione
+\end_layout
+
+\begin_layout Section
+Studio di Funzione
+\end_layout
+
+\begin_layout Subsection
+Dominio,
+ simmetrie e segno
+\end_layout
+
+\begin_layout Subsubsection
+Dominio
+\end_layout
+
+\begin_layout Standard
+Per dominio si intende l'insieme dei valori di 
+\begin_inset Formula $x$
+\end_inset
+
+ per cui la funzione è definita.
+\begin_inset Newline newline
+\end_inset
+
+Casi tipici:
+\end_layout
+
+\begin_layout Itemize
+Frazioni 
+\begin_inset Formula $\to$
+\end_inset
+
+ denominatore 
+\begin_inset Formula $\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Radici pari 
+\begin_inset Formula $\to$
+\end_inset
+
+ argomento 
+\begin_inset Formula $\geq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Logaritmi 
+\begin_inset Formula $\to$
+\end_inset
+
+ argomento 
+\begin_inset Formula $>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Funzioni goniometriche con 
+\begin_inset Formula $Df(x)\neq\mathbb{R}$
+\end_inset
+
+ (Esclusi frazioni con seni e coseni ad es.
+ tangente):
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $f(x)=arcsin\,x\to$
+\end_inset
+
+
+\begin_inset Formula $Df(x)=[-1,1]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f(x)=arccos\,x\to$
+\end_inset
+
+
+\begin_inset Formula $Df(x)=[-1,1]$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Esempio:
+ 
+\begin_inset Formula $f(x)=\frac{x-3}{x+1}\Rightarrow\begin{cases}
+\begin{array}{c}
+f(x)=0\\
+f(x)>0\\
+f(x)<0
+\end{array} & \begin{array}{c}
+\text{se }x=3\\
+\text{ se }x<-1\text{o }x>3\\
+\text{ se }-1<x<3
+\end{array}\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Simmetrie
+\end_layout
+
+\begin_layout Itemize
+Parità:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $f(-x)=f(x)\to$
+\end_inset
+
+Funzione pari (simmetria rispetto all'asse 
+\begin_inset Formula $y$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f(-x)=-f(x)\to$
+\end_inset
+
+ Funzione dispari (simmetria rispetto all'origine)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Esempio:
+ 
+\begin_inset Formula $f(x)=x^{2}\Rightarrow f(-x)=(-x)^{2}=x^{2}\Rightarrow f$
+\end_inset
+
+ pari.
+\begin_inset Newline newline
+\end_inset
+
+
+\emph on
+NB.
+ Per le funzioni fratte basta che numeratore e denominatore abbiano segno discorde.
+\end_layout
+
+\begin_layout Subsection
+Punti di accumulazione,
+ limiti e asintoti
+\end_layout
+
+\begin_layout Subsection
+Studio della continuità e derivabilità,
+ monotònia
+\end_layout
+
+\begin_layout Subsection
+Derivata seconda e convessità
+\end_layout
+
+\begin_layout Subsection
+Grafico qualitativo di 
+\begin_inset Formula $f(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Alla fine dei calcoli svolti fino ad ora dovrebbe esser possibile tracciare un grafico qualitativo della funzione,
+ di seguito si trovano le funzioni fondamentali.
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $f(x)=x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+    axis lines=middle,
+\end_layout
+
+\begin_layout Plain Layout
+
+    grid=none,
+\end_layout
+
+\begin_layout Plain Layout
+
+    xlabel={$x$},
+ ylabel={$y$},
+\end_layout
+
+\begin_layout Plain Layout
+
+    width=15cm,
+ height=6cm
+\end_layout
+
+\begin_layout Plain Layout
+
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[blue,
+ thick,
+ samples=200,
+ domain=-3:3] {x};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $f(x)=x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+    axis lines=middle,
+\end_layout
+
+\begin_layout Plain Layout
+
+    grid=none,
+\end_layout
+
+\begin_layout Plain Layout
+
+    xlabel={$x$},
+ ylabel={$y$},
+\end_layout
+
+\begin_layout Plain Layout
+
+    width=15cm,
+ height=6cm
+\end_layout
+
+\begin_layout Plain Layout
+
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[blue,
+ thick,
+ samples=200,
+ domain=-3:3] {x^2};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $f(x)=x^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+    axis lines=middle,
+\end_layout
+
+\begin_layout Plain Layout
+
+    grid=none,
+\end_layout
+
+\begin_layout Plain Layout
+
+    xlabel={$x$},
+ ylabel={$y$},
+\end_layout
+
+\begin_layout Plain Layout
+
+    width=15cm,
+ height=6cm
+\end_layout
+
+\begin_layout Plain Layout
+
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[blue,
+ thick,
+ samples=200,
+ domain=-3:3] {x^3};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $f(x)=ln\,x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+    axis lines=middle,
+\end_layout
+
+\begin_layout Plain Layout
+
+    grid=none,
+\end_layout
+
+\begin_layout Plain Layout
+
+    xlabel={$x$},
+ ylabel={$y$},
+\end_layout
+
+\begin_layout Plain Layout
+
+    width=15cm,
+ height=6cm
+\end_layout
+
+\begin_layout Plain Layout
+
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[blue,
+ thick,
+ samples=200,
+ domain=-3:3] {ln(x)};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $f(x)=\frac{1}{lnx}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+    axis lines=middle,
+\end_layout
+
+\begin_layout Plain Layout
+
+    grid=none,
+\end_layout
+
+\begin_layout Plain Layout
+
+    xlabel={$x$},
+ ylabel={$y$},
+\end_layout
+
+\begin_layout Plain Layout
+
+    width=15cm,
+ height=6cm
+\end_layout
+
+\begin_layout Plain Layout
+
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[blue,
+ thick,
+ samples=200,
+ domain=-3:3] {1/ln(x)};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
