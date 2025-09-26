@@ -701,13 +701,6 @@ Esempio:
 \end_inset
 
  pari.
-\begin_inset Newline newline
-\end_inset
-
-
-\emph on
-NB.
- Per le funzioni fratte basta che numeratore e denominatore abbiano segno discorde.
 \end_layout
 
 \begin_layout Subsection
@@ -715,13 +708,550 @@ Punti di accumulazione,
  limiti e asintoti
 \end_layout
 
+\begin_layout Standard
+Principalmente lo studio dei limiti è finalizzato alla determinazione dell'esistenza degli asintoti,
+ questi possono essere:
+\end_layout
+
+\begin_layout Itemize
+Asintoti Verticali 
+\begin_inset Formula $\to$
+\end_inset
+
+ Quando il limite in un punto va a 
+\begin_inset Formula $\pm\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Asintoti Orizzontali 
+\begin_inset Formula $\to$
+\end_inset
+
+ Quando 
+\begin_inset Formula $lim_{x\to\pm\infty}f(x)=L\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Asintoti Obliqui
+\end_layout
+
+\begin_layout Standard
+Per gli asintoti obliqui il procedimento è leggermente più lungo,
+ innanzitutto 
+\series bold
+\emph on
+la presenza di asintoti orizzontali preclude la presenza di asintoti obliqui 
+\series default
+\emph default
+quindi se sono presenti as.
+ orizzontali ci si può fermare,
+ in caso non siano presenti fare testo a quanto segue:
+\begin_inset Newline newline
+\end_inset
+
+Un as.
+ obliquo è una retta (Quindi forma 
+\begin_inset Formula $y=mx+q$
+\end_inset
+
+),
+ per trovarlo calcolo la pendenza 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $m$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ con:
+ 
+\begin_inset Formula $m=lim_{x\to\pm\infty}\frac{f(x)}{x}$
+\end_inset
+
+ se questo limite esiste ed è finito allora possiamo calcolare 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $q$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ con:
+ 
+\begin_inset Formula $q=lim_{x\to\pm\infty}(f(x)-mx)$
+\end_inset
+
+ se anche questo limite esiste ed è finito allora l'asintoto obliquo esiste ed è proprio:
+ 
+\begin_inset Formula $y=mx+q$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+\emph on
+NB.
+ se 
+\begin_inset Formula $m=0$
+\end_inset
+
+ l'asintoto non è olbiquo ma orizzontale,
+ se il grado del numeratore è maggiore di 1 grado rispetto al numeratore (ad es.
+ 
+\begin_inset Formula $\frac{x^{2}}{x}$
+\end_inset
+
+) è comune avere un as.
+ obliquo,
+ se invece il numeratore ha grado maggiore di 2 o più rispetto al numeratore probabilmente avremo un as.
+ verticale.
+\end_layout
+
 \begin_layout Subsection
 Studio della continuità e derivabilità,
  monotònia
 \end_layout
 
+\begin_layout Subsubsection
+Continuità
+\end_layout
+
+\begin_layout Standard
+Per definizione una funzione è continua in un dato punto 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ se 
+\begin_inset Formula $lim_{x\to x_{0}}f(x)=f(x_{0})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Verifico punti critici del dominio di 
+\begin_inset Formula $f$
+\end_inset
+
+ e controllo se sono presenti discontinuità,
+ queste possono essere:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Eliminabile:
+ 
+\series default
+limite esiste finito ma 
+\begin_inset Formula $f(x_{0})$
+\end_inset
+
+ non è definito o è diverso.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Di salto:
+
+\series default
+ i due limiti laterali esistono ma sono diversi.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Infinita:
+
+\series default
+ almeno un limite laterale tende a 
+\begin_inset Formula $\pm\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Esempio:
+ 
+\begin_inset Formula $f(x)=\frac{x^{2}-1}{x-1}\Rightarrow D[f(x)]=\mathbb{R}\backslash\{1\}$
+\end_inset
+
+ In 
+\begin_inset Formula $x=1\rightarrow$
+\end_inset
+
+ discontinuità eliminabile.
+\end_layout
+
+\begin_layout Subsubsection
+Derivabilità
+\end_layout
+
+\begin_layout Standard
+Per definizione una funzione è derivabile in un dato punto 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ se 
+\begin_inset Formula $f(x_{0})=lim_{h\to0}\frac{f(x_{0}+h)-f(x_{0})}{h}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Se 
+\begin_inset Formula $f$
+\end_inset
+
+ è derivabile allora è continua,
+ ma non sempre vale il contrario.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Strategia operativa:
+\end_layout
+
+\begin_layout Enumerate
+Controllo dove la funzione è sospetta (valori assoluti,
+ radici,
+ punti angolosi)
+\end_layout
+
+\begin_layout Enumerate
+Verifico che il limite destro e sinistro su quel punto coincidano
+\end_layout
+
+\begin_layout Standard
+Nel caso non dovessero coincidere vuol dire che ci troviamo di fronte ad un punto di non derivabilità,
+ casi più comuni:
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Angolo:
+
+\series default
+ ad es.
+\begin_inset Formula $f(x)=|x|$
+\end_inset
+
+ funzione continua ma non derivabile,
+ c'è un'improvviso cambio di pendenza,
+ in 
+\begin_inset Formula $x_{0}=0^{-}$
+\end_inset
+
+ 
+\begin_inset Formula $f'(x_{0})=-1$
+\end_inset
+
+,
+ in 
+\begin_inset Formula $x=0^{+}$
+\end_inset
+
+ 
+\begin_inset Formula $f'(x_{0})=+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Cuspide:
+
+\series default
+ ad es.
+ 
+\begin_inset Formula $f(x)=\sqrt[3]{x}$
+\end_inset
+
+ funzione continua ma non derivabile,
+ in 
+\begin_inset Formula $x_{0}=0^{-}$
+\end_inset
+
+ 
+\begin_inset Formula $f'(x_{0})=-\infty$
+\end_inset
+
+,
+ in 
+\begin_inset Formula $x_{0}=0^{+}$
+\end_inset
+
+ 
+\begin_inset Formula $f'(x_{0})=+\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Tangente verticale:
+
+\series default
+ ad es.
+ 
+\begin_inset Formula $f(x)=\sqrt{x}$
+\end_inset
+
+ non è richiesto che la funzione sia derivabile sia da destra che da sinistra,
+ basta 1 delle due,
+ basta che la funzione sia continua e che la derivata da destra o sinistra vada a 
+\begin_inset Formula $\pm\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Se una funzione non è continua,
+ automaticamente non è derivabile,
+ ad esempio 
+\begin_inset Formula $f(x)=\frac{1}{x}$
+\end_inset
+
+ in 
+\begin_inset Formula $x=0$
+\end_inset
+
+ non è derivabile per discontinuità.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Strategia operativa:
+\end_layout
+
+\begin_layout Enumerate
+Controllo la continuità.
+ Se non è continua 
+\begin_inset Formula $\to$
+\end_inset
+
+ già classificata.
+\end_layout
+
+\begin_layout Enumerate
+Se è continua:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Calcolo la derivata a destra e sinistra.
+\end_layout
+
+\begin_layout Enumerate
+Confronto i valori:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Diversi e finiti 
+\begin_inset Formula $\to$
+\end_inset
+
+ 
+\series bold
+angolo
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+Entrambi infiniti con segni opposti 
+\begin_inset Formula $\to$
+\end_inset
+
+ 
+\series bold
+cuspide
+\series default
+.
+\end_layout
+
+\begin_layout Enumerate
+Entrambi con stesso segno 
+\begin_inset Formula $\to$
+\end_inset
+
+ 
+\series bold
+tangente verticale
+\series default
+.
+\end_layout
+
+\end_deeper
+\end_deeper
 \begin_layout Subsection
 Derivata seconda e convessità
+\end_layout
+
+\begin_layout Standard
+In questa fase andiamo a controllare se ci sono cambi di convessità e se sono presenti punti di flesso.
+\begin_inset Newline newline
+\end_inset
+
+Strategia operativa:
+\end_layout
+
+\begin_layout Enumerate
+Calcolo la derivata seconda (
+\begin_inset Formula $f''(x)$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Trovo i punti candidati ad essere punti di flesso con 
+\begin_inset Formula $f''(x)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Verifico se in questi punti c'è un cambio di concavità (
+\begin_inset Formula $f$
+\end_inset
+
+ passa da 
+\begin_inset Formula $f''(x)>0$
+\end_inset
+
+ a 
+\begin_inset Formula $f''(x)<0$
+\end_inset
+
+ o viceversa),
+ se questo si verifica allora c'è un punto di flesso,
+ altrimenti no.
+\end_layout
+
+\begin_layout Enumerate
+Riassumo i vari risultati in uno studio del segno per completezza.
+\end_layout
+
+\begin_layout Standard
+Esempio:
+ 
+\begin_inset Formula $f(x)=x^{3}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f'(x)=3x^{2}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f''(x)=6x$
+\end_inset
+
+,
+ risolvendo 
+\begin_inset Formula $f''(x)=0$
+\end_inset
+
+ si ottiene 
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+ Per 
+\begin_inset Formula $x<0$
+\end_inset
+
+ si ha 
+\begin_inset Formula $f''(x)<0\to$
+\end_inset
+
+ concava,
+ per 
+\begin_inset Formula $f''(x)>0\to$
+\end_inset
+
+convessa.
+ Dato che c'è stato un cambio di concavità in 
+\begin_inset Formula $x=0$
+\end_inset
+
+ allora in questo punto c'è un flesso.
+\begin_inset Newline newline
+\end_inset
+
+Esempio:
+ 
+\begin_inset Formula $f(x)=x^{4},$
+\end_inset
+
+
+\begin_inset Formula $f'(x)=4x^{3}$
+\end_inset
+
+,
+ 
+\begin_inset Formula $f''(x)=12x^{2}$
+\end_inset
+
+,
+ risolvendo 
+\begin_inset Formula $f''(x)=0$
+\end_inset
+
+ si ottiene 
+\begin_inset Formula $x=0$
+\end_inset
+
+.
+ Però 
+\begin_inset Formula $f''(x)$
+\end_inset
+
+ è sempre 
+\begin_inset Formula $\geq0$
+\end_inset
+
+ quindi la curva è sempre convessa verso l'alto e quindi non essendoci nessun cambio di concavità in quel punto non c'è un flesso.
 \end_layout
 
 \begin_layout Subsection
@@ -1263,7 +1793,25 @@ begin{axis}[
 \begin_layout Plain Layout
 
     width=15cm,
- height=6cm
+ height=6cm,
+\end_layout
+
+\begin_layout Plain Layout
+
+    xmin=-6,
+ xmax=6,
+ ymin=-10,
+ ymax=10,
+\end_layout
+
+\begin_layout Plain Layout
+
+    samples=500,
+\end_layout
+
+\begin_layout Plain Layout
+
+    unbounded coords=jump  % non unire sui verticali
 \end_layout
 
 \begin_layout Plain Layout
@@ -1273,12 +1821,43 @@ begin{axis}[
 
 \begin_layout Plain Layout
 
+    % f(x) = 1/ln|x|  (scrivere ln(abs(x)) in PGFPlots)
+\end_layout
+
+\begin_layout Plain Layout
+
     
 \backslash
 addplot[blue,
  thick,
- samples=200,
- domain=-3:3] {1/ln(abs(x))};
+ domain=-6:-1.01]  {1/ln(abs(x))};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[blue,
+ thick,
+ domain=-0.99:-0.01]{1/ln(abs(x))};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[blue,
+ thick,
+ domain= 0.01:0.99]{1/ln(abs(x))};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[blue,
+ thick,
+ domain= 1.01:6]   {1/ln(abs(x))};
 \end_layout
 
 \begin_layout Plain Layout
@@ -1645,7 +2224,21 @@ begin{axis}[
 \begin_layout Plain Layout
 
     width=15cm,
- height=6cm
+ height=6cm,
+\end_layout
+
+\begin_layout Plain Layout
+
+    domain=-1.45:1.45,
+ samples=400,
+ trig format=rad,
+\end_layout
+
+\begin_layout Plain Layout
+
+    unbounded coords=jump,
+ ymin=-10,
+ ymax=10
 \end_layout
 
 \begin_layout Plain Layout
@@ -1658,10 +2251,7 @@ begin{axis}[
     
 \backslash
 addplot[blue,
- thick,
- trig format=rad,
- samples=200,
- domain=-2:2] {tan(x)};
+ thick] {tan(x)};
 \end_layout
 
 \begin_layout Plain Layout
@@ -1741,7 +2331,15 @@ begin{axis}[
 \begin_layout Plain Layout
 
     width=15cm,
- height=6cm
+ height=6cm,
+\end_layout
+
+\begin_layout Plain Layout
+
+    domain=-1:1,
+ samples=400,
+ ymin=-2,
+ ymax=2
 \end_layout
 
 \begin_layout Plain Layout
@@ -1754,9 +2352,7 @@ begin{axis}[
     
 \backslash
 addplot[blue,
- thick,
- samples=200,
- domain=-1:1] {asin(x)};
+ thick] {rad(asin(x))};
 \end_layout
 
 \begin_layout Plain Layout
@@ -1836,7 +2432,15 @@ begin{axis}[
 \begin_layout Plain Layout
 
     width=15cm,
- height=6cm
+ height=6cm,
+\end_layout
+
+\begin_layout Plain Layout
+
+    domain=-1:1,
+ samples=400,
+ ymin=0,
+ ymax=3.5
 \end_layout
 
 \begin_layout Plain Layout
@@ -1849,9 +2453,7 @@ begin{axis}[
     
 \backslash
 addplot[blue,
- thick,
- samples=200,
- domain=-1:1] {acos(x)};
+ thick] {rad(acos(x))};
 \end_layout
 
 \begin_layout Plain Layout
