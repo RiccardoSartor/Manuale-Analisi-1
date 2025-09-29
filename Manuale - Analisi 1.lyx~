@@ -10,6 +10,7 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 \setcounter{tocdepth}{3}
+\usepackage[utf8]{inputenc}
 \end_preamble
 \options a4paper
 \use_default_options true
@@ -2582,7 +2583,7 @@ Studio della convergenza
 \end_layout
 
 \begin_layout Subsection
-Serie Geometrica
+Serie geometrica
 \end_layout
 
 \begin_layout Standard
@@ -2623,7 +2624,7 @@ n+1 & \text{se }q=1
 \begin_inset Formula $\stackrel[n=0]{\infty}{\sum}q^{n}=\begin{cases}
 \text{convergente (con somma}\frac{1}{1-q}\text{)} & \text{se }|q|<1\\
 \text{divergente} & \text{se }q\geq1\\
-\text{indeterminata} & \text{se }1\leq-1
+\text{indeterminata} & \text{se }q\leq-1
 \end{cases}$
 \end_inset
 
@@ -3035,7 +3036,108 @@ Serie armoniche generalizzate:
 \begin_inset Formula $\stackrel[n=1]{\infty}{\sum}\frac{1}{n^{\alpha}}$
 \end_inset
 
+ 
+\begin_inset Formula $\begin{cases}
+\text{converge} & \text{se }\alpha>1\\
+\text{diverge} & \text{se }\alpha\leq1
+\end{cases}$
+\end_inset
 
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\stackrel[n=2]{\infty}{\sum}\frac{1}{n^{\alpha}(log\,n)^{\beta}}$
+\end_inset
+
+
+\begin_inset Formula $\begin{cases}
+\text{converge} & \text{se }\alpha>1\text{ oppure }\alpha=1\text{ e }\beta>1\\
+\text{diverge} & \text{se }\alpha<1\text{ oppure }\alpha=1\text{ e }\beta\leq1
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Esempio:
+
+\series default
+ 
+\begin_inset Formula $\stackrel[n=1]{\infty}{\sum}(\frac{cos\,n}{n})^{2}$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $0\leq(\frac{cos\,n}{n})^{2}\leq\frac{1}{n^{2}}$
+\end_inset
+
+ 
+\begin_inset Formula $\forall n\geq1$
+\end_inset
+
+,
+\begin_inset Formula $\stackrel[n=1]{\infty}{\sum}\frac{1}{n^{2}}$
+\end_inset
+
+ converge,
+ dunque il criterio del confronto ci assicura che 
+\begin_inset Formula $\stackrel[n=1]{\infty}{\sum}(\frac{cos\,n}{n})^{2}$
+\end_inset
+
+ converge.
+\end_layout
+
+\begin_layout Subsubsection
+Criterio del confronto asintotico
+\end_layout
+
+\begin_layout Standard
+Date 2 successioni 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ e 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ a termini definitivamente positivi se 
+\begin_inset Formula $a_{n}\sim b_{n}$
+\end_inset
+
+ (ovvero se 
+\begin_inset Formula $\underset{n\to+\infty}{lim}\frac{a_{n}}{b_{n}}=1$
+\end_inset
+
+),
+ allora le corrispondenti serie 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ e 
+\begin_inset Formula $\sum b_{n}$
+\end_inset
+
+ hanno lo stesso carattere.
+\begin_inset Newline newline
+\end_inset
+
+Esempio:
+ 
+\begin_inset Formula $\stackrel[n=1]{\infty}{\sum}\frac{n+cos\,n}{n^{3}-3n}\sim\frac{1}{n^{2}}\to$
+\end_inset
+
+ converge a 
+\begin_inset Formula $0$
+\end_inset
+
+.
 \end_layout
 
 \end_body

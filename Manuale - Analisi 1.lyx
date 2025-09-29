@@ -10,6 +10,7 @@
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
 \setcounter{tocdepth}{3}
+\usepackage[utf8]{inputenc}
 \end_preamble
 \options a4paper
 \use_default_options true
@@ -2582,7 +2583,7 @@ Studio della convergenza
 \end_layout
 
 \begin_layout Subsection
-Serie Geometrica
+Serie geometrica
 \end_layout
 
 \begin_layout Standard
@@ -2623,7 +2624,7 @@ n+1 & \text{se }q=1
 \begin_inset Formula $\stackrel[n=0]{\infty}{\sum}q^{n}=\begin{cases}
 \text{convergente (con somma}\frac{1}{1-q}\text{)} & \text{se }|q|<1\\
 \text{divergente} & \text{se }q\geq1\\
-\text{indeterminata} & \text{se }1\leq-1
+\text{indeterminata} & \text{se }q\leq-1
 \end{cases}$
 \end_inset
 
@@ -2767,7 +2768,7 @@ Serie a termini di segno variabile
 
 \end_layout
 
-\begin_layout Subsection*
+\begin_layout Subsection
 Serie di Mengoli (Serie telescopica)
 \end_layout
 
