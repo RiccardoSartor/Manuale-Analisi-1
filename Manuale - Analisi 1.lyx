@@ -2581,5 +2581,462 @@ end{center}
 Studio della convergenza
 \end_layout
 
+\begin_layout Subsection
+Serie Geometrica
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\stackrel[n=0]{\infty}{\sum}q^{n}\text{ con }q\in\mathbb{R}\text{ è detta serie geometrica.}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $s_{n}=1+q+q^{2}+...+q^{n}=\begin{cases}
+\frac{1-q^{n+1}}{1-q} & \text{se }q\neq1\\
+n+1 & \text{se }q=1
+\end{cases}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\underset{n\to+\infty}{lim}s_{n}=\begin{cases}
+\frac{1}{1-q} & \text{se }|q|<1\\
++\infty & \text{se }q\geq1\\
+\text{non esiste} & \text{se }1\leq-1
+\end{cases}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\stackrel[n=0]{\infty}{\sum}q^{n}=\begin{cases}
+\text{convergente (con somma}\frac{1}{1-q}\text{)} & \text{se }|q|<1\\
+\text{divergente} & \text{se }q\geq1\\
+\text{indeterminata} & \text{se }1\leq-1
+\end{cases}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+ESEMPIO:
+
+\series default
+ 
+\begin_inset Formula $\stackrel[n=0]{\infty}{\sum}(\frac{1}{2})^{n}$
+\end_inset
+
+ converge (essendo 
+\begin_inset Formula $\frac{1}{2}<1$
+\end_inset
+
+ dove 
+\begin_inset Formula $\frac{1}{2}=q$
+\end_inset
+
+) e la somma è:
+ 
+\begin_inset Formula $\frac{1}{1-\frac{1}{2}}=2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Siano 
+\begin_inset Formula $\stackrel[n=0]{\infty}{\sum}a_{n}$
+\end_inset
+
+e 
+\begin_inset Formula $\stackrel[n=0]{\infty}{\sum}b_{n}$
+\end_inset
+
+ due serie numeriche convergenti e sia 
+\begin_inset Formula $k\in\mathbb{R}$
+\end_inset
+
+.
+ Allora:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\stackrel[n=0]{\infty}{\sum}(a_{n}+b_{n})=\stackrel[n=0]{\infty}{\sum}a_{n}+\stackrel[n=0]{\infty}{\sum}b_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\stackrel[n=0]{\infty}{\sum}Ka_{n}=K\stackrel[n=0]{\infty}{\sum}a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+NB.
+ Se 
+\begin_inset Formula $\stackrel[n=0]{\infty}{\sum}a_{n}$
+\end_inset
+
+ converge,
+ anche 
+\begin_inset Formula $\stackrel[n=0]{\infty}{\sum}Ka_{n}$
+\end_inset
+
+ converge (stessa cosa per la divergenza)
+\end_layout
+
+\begin_layout Subsection
+Condizione necessaria di convergenza
+\end_layout
+
+\begin_layout Standard
+Affinche una serie converga è necessario che il 
+\emph on
+termine generale 
+\emph default
+
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ 
+\emph on
+sia infinitesimo
+\emph default
+ (Ovvero 
+\begin_inset Formula $a_{n}\to0$
+\end_inset
+
+ per 
+\begin_inset Formula $n\to+\infty$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Subsection
+Criteri con condizioni sufficienti per la convergenza
+\end_layout
+
+\begin_layout Standard
+Serie a termini non negativi
+\begin_inset Formula $\begin{cases}
+\text{criterio del rapporto}\\
+\text{criterio della radice}\\
+\text{criterio del confronto}\\
+\text{criterio del confronto asintotico}
+\end{cases}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Serie a termini di segno variabile
+\begin_inset Formula $\begin{cases}
+\text{Criterio dell'assoluta convergenza}\\
+\text{criterio di Leibniz}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Serie di Mengoli (Serie telescopica)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\stackrel[n=1]{\infty}{\sum}\frac{1}{n(n+1)}\text{ è detta serie di Mengoli}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $s_{n}=1\bcancel{-\frac{1}{2}}\bcancel{+\frac{1}{2}}\bcancel{-\frac{1}{3}}\bcancel{+\frac{1}{3}}\bcancel{-\frac{1}{4}}+...+\bcancel{\frac{1}{n-1}}\bcancel{-\frac{1}{n}}\bcancel{+\frac{1}{n}}-\frac{1}{n+1}=1-\frac{1}{n+1}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\underset{n\to+\infty}{lim}s_{n}=\underset{n\to+\infty}{lim}[1-\frac{1}{n+1}]=1\Rightarrow$
+\end_inset
+
+ La serie 
+\begin_inset Formula $\stackrel[n=1]{\infty}{\sum}\frac{1}{n(n+1)}$
+\end_inset
+
+ converge e la somma è 
+\begin_inset Formula $1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+\emph on
+NB.
+ Trovare negli esercizi la serie telescopica è piuttosto raro.
+\end_layout
+
+\begin_layout Subsection
+Criteri di convergenza
+\end_layout
+
+\begin_layout Subsubsection*
+Criterio del rapporto
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+ definitivamente e supponiamo che 
+\begin_inset Formula $\underset{n\to+\infty}{lim}\frac{a_{n+1}}{a_{n}}=l$
+\end_inset
+
+ (Essendo 
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+ allora 
+\begin_inset Formula $l\in[0,+\infty)$
+\end_inset
+
+ oppure 
+\begin_inset Formula $l=+\infty$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $l<1$
+\end_inset
+
+ allora 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ converge
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $l>1$
+\end_inset
+
+ allora 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ diverge
+\end_layout
+
+\begin_layout Itemize
+se 
+\begin_inset Formula $l=1$
+\end_inset
+
+ tutto è possibile (bisogna cambiare criterio)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Esempio:
+ 
+\series default
+Studio il carattere della serie 
+\begin_inset Formula $\underset{n=0}{\overset{\infty}{\sum}}\frac{n^{2015}}{3^{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\underset{n\to+\infty}{lim}\frac{a_{n+1}}{a_{n}}=\underset{n\to+\infty}{lim}\frac{\frac{(n+1)^{2015}}{3^{n+1}}}{\frac{n^{2015}}{3^{n}}}=\underset{n\to+\infty}{lim}\frac{(n+1)^{2015}}{3*\bcancel{3^{n}}}*\frac{\bcancel{3}^{n}}{n^{2015}}=\underset{n\to+\infty}{lim}\frac{1}{3}*\frac{(n+1)^{2015}}{n^{2015}}=\frac{1}{3}<1$
+\end_inset
+
+ quindi la serie converge.
+\end_layout
+
+\begin_layout Subsubsection
+Criterio della radice (CAUCHY)
+\end_layout
+
+\begin_layout Standard
+Siano 
+\begin_inset Formula $a_{n}\geq0$
+\end_inset
+
+ definitivamente e supponiamo che 
+\begin_inset Formula $\underset{n\to+\infty}{lim}\sqrt[n]{a_{n}}=l$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $l<1$
+\end_inset
+
+ allora 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ converge
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $l>1$
+\end_inset
+
+ allora 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ diverge
+\end_layout
+
+\begin_layout Itemize
+se 
+\begin_inset Formula $l=1$
+\end_inset
+
+ tutto è possibile (bisogna cambiare criterio)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Esempio:
+ 
+\series default
+
+\begin_inset Formula $\stackrel[n=2]{\infty}{\sum}\frac{1}{(log\,n)^{\frac{n}{2}}}=\underset{n\to+\infty}{lim}\sqrt[n]{\frac{1}{(log\,n)^{\frac{n}{2}}}}=\underset{n\to+\infty}{lim}[(log\,n)^{-\frac{n}{2}}]^{\frac{1}{n}}=\underset{n\to+\infty}{lim}(log\,n)^{-\frac{1}{2}}=\underset{n\to+\infty}{lim}\frac{1}{\sqrt{log\,n}}=0<1\Rightarrow$
+\end_inset
+
+ La serie converge.
+\end_layout
+
+\begin_layout Subsubsection
+Criterio del confronto
+\end_layout
+
+\begin_layout Standard
+Supponiamo che 
+\begin_inset Formula $0\leq a_{n}\leq b_{n}$
+\end_inset
+
+ definitivamente.
+ Allora valgono le seguenti implicazioni:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\sum b_{n}$
+\end_inset
+
+ converge 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ converge.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ diverge a 
+\begin_inset Formula $+\infty$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\sum b_{n}$
+\end_inset
+
+ diverge a 
+\begin_inset Formula $+\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+NB.
+ 
+\series default
+Le implicazioni inverse in generale non valgono.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Serie armoniche generalizzate:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\stackrel[n=1]{\infty}{\sum}\frac{1}{n^{\alpha}}$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

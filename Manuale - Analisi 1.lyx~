@@ -1839,7 +1839,7 @@ addplot[blue,
 \backslash
 addplot[blue,
  thick,
- domain=-0.99:-0.01]{1/ln(abs(x))};
+ domain=-0.99:-0.001]{1/ln(abs(x))};
 \end_layout
 
 \begin_layout Plain Layout
@@ -1848,7 +1848,7 @@ addplot[blue,
 \backslash
 addplot[blue,
  thick,
- domain= 0.01:0.99]{1/ln(abs(x))};
+ domain= 0.001:0.99]{1/ln(abs(x))};
 \end_layout
 
 \begin_layout Plain Layout
@@ -2579,6 +2579,32 @@ end{center}
 
 \begin_layout Part
 Studio della convergenza
+\end_layout
+
+\begin_layout Subsubsection
+Serie Geometrica
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\stackrel[n=0]{\infty}{\sum}q^{n}$
+\end_inset
+
+ con 
+\begin_inset Formula $q\in\mathbb{R}$
+\end_inset
+
+ è detta serie geometrica.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $s_{n=1+q+q^{2}+...+q^{n}=\begin{cases}
+\frac{1-q^{n+1}}{1-q} & \text{se }q\neq1\\
+n+1 & \text{se }q=1
+\end{cases}}$
+\end_inset
+
+
 \end_layout
 
 \end_body
