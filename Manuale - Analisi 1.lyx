@@ -9,8 +9,9 @@
 \usepackage{tikz}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.18}
-\setcounter{tocdepth}{3}
 \usepackage[utf8]{inputenc}
+\setlength{\tabcolsep}{10pt}
+\renewcommand{\arraystretch}{1.7}
 \end_preamble
 \options a4paper
 \use_default_options true
@@ -84,8 +85,8 @@
 \topmargin 2cm
 \rightmargin 1cm
 \bottommargin 2cm
-\secnumdepth 2
-\tocdepth 2
+\secnumdepth 3
+\tocdepth 3
 \paragraph_separation indent
 \paragraph_indentation default
 \is_math_indent 0
@@ -110,7 +111,11 @@
 \begin_body
 
 \begin_layout Title
-Manuale - Analisi 1
+Analisi 1
+\begin_inset Newline newline
+\end_inset
+
+Manuale di sopravvivenza
 \begin_inset Newline newline
 \end_inset
 
@@ -120,6 +125,22 @@ Ingegneria Informatica
 \begin_layout Standard
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
 
 \end_inset
 
@@ -551,6 +572,1057 @@ Divisione
 
 \end_deeper
 \end_deeper
+\begin_layout Section
+Limiti notevoli
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="10" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Espressione in 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Espressione in 
+\begin_inset Formula $f(x)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+F.
+ Indeterminata
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{x\to\pm\infty}{lim}(1+\frac{1}{x})^{x}=e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{x\to\pm\infty}{lim}(1+\frac{1}{f(x)})^{fx}=e$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $[1^{\infty}]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{x\to0}{lim}\frac{a^{x}-1}{x}=ln\,a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{x\to0}{lim}\frac{a^{f(x)}-1}{f(x)}=ln\,a$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $[\frac{0}{0}]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{x\to0}{lim}\frac{e^{x}-1}{x}=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{x\to0}{lim}\frac{e^{f(x)}-1}{f(x)}=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $[\frac{0}{0}]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{x\to0}{lim}\frac{log_{a}(1+x)}{x}=\frac{1}{ln\,a}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{x\to0}{lim}\frac{log_{a}(1+f(x))}{f(x)}=\frac{1}{ln\,a}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $[\frac{0}{0}]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{x\to0}{lim}\frac{ln(1+x)}{x}=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{x\to0}{lim}\frac{ln(1+f(x))}{f(x)}=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $[\frac{0}{0}]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{x\to0}{lim}\frac{(1+x)^{k}-1}{x}=k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{x\to0}{lim}\frac{(1+f(x))^{k}-1}{f(x)}=k$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $[\frac{0}{0}]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{x\to0}{lim}\frac{sin(x)}{x}=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{x\to0}{lim}\frac{sin(f(x))}{f(x)}=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $[\frac{0}{0}]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{x\to0}{lim}\frac{1-cos(x)}{x^{2}}=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{x\to0}{lim}\frac{1-cos(f(x))}{[f(x)]^{2}}=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $[\frac{0}{0}]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{x\to0}{lim}\frac{tan(x)}{x}=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\underset{x\to0}{lim}\frac{tan(f(x))}{f(x)}=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $[\frac{0}{0}]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Proprietà dei Logaritmi
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $log_{a}(x*y)=log_{a}(x)+log_{a}(y)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $log_{a}(\frac{x}{y})=log_{a}(x)-log_{a}(y)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $log_{a}(x^{n})=n*log_{a}(x)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $log_{b}x=\frac{log_{a}x}{log_{a}(b)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $log_{a}(b)=\frac{1}{log_{b}(a)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Fattoriali
+\end_layout
+
+\begin_layout Subsubsection
+Definizione base
+\end_layout
+
+\begin_layout Standard
+Per 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+:
+ 
+\begin_inset Formula $n!=n*(n-1)*(n-2)*...*2*1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+con 
+\begin_inset Formula $0!=1$
+\end_inset
+
+ (Per convenzione).
+\end_layout
+
+\begin_layout Subsubsection
+Relazioni ricorsive
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $(n+1)!=(n+1)*n!$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n!=n*(x-1)!$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $n!=\frac{(n+1)!}{n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Fattoriale e coefficienti binomiali
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\binom{n}{k}=\frac{n!}{k!(n-k!)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\binom{n}{k}=\binom{n}{n-k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Prodotti notevoli
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\binom{(2n)!}{n!}=(n+1)*(n+2)*...*(2n)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\frac{(2n)!}{(n!)^{2}}=\binom{2n}{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Somma asintotica
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n!\thicksim\sqrt{2\pi n}*(\frac{n}{e})^{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Ordini di infinito
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" toplineltrim="true" toplinertrim="true" bottomlineltrim="true" bottomlinertrim="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+    axis lines=middle,
+\end_layout
+
+\begin_layout Plain Layout
+
+    xlabel={$x$},
+ ylabel={$y$},
+\end_layout
+
+\begin_layout Plain Layout
+
+    width=9cm,
+ height=8cm,
+\end_layout
+
+\begin_layout Plain Layout
+
+    xmin=1,
+ xmax=5,
+\end_layout
+
+\begin_layout Plain Layout
+
+    ymode=log,
+ % scala logaritmica
+\end_layout
+
+\begin_layout Plain Layout
+
+    legend pos=north west
+\end_layout
+
+\begin_layout Plain Layout
+
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+
+    % logaritmo
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[blue,
+ thick,
+ samples=100,
+ domain=1:5] {ln(x)};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addlegendentry{$ln(x)$}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    % polinomio
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[red,
+ thick,
+ samples=100,
+ domain=1:5] {x^2};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addlegendentry{$x^2$}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    % esponenziale
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[green!60!black,
+ thick,
+ samples=100,
+ domain=1:5] {exp(x)};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addlegendentry{$e^x$}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    % fattoriale
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[orange,
+ thick,
+ samples=10000,
+ domain=1:5] {x!};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addlegendentry{$x!$}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    % x^x
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[purple,
+ thick,
+ samples=100,
+ domain=1:5] {x^x};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addlegendentry{$x^x$}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" toplineltrim="true" toplinertrim="true" bottomlineltrim="true" bottomlinertrim="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+    axis lines=middle,
+\end_layout
+
+\begin_layout Plain Layout
+
+    xlabel={$x$},
+ ylabel={$y$},
+\end_layout
+
+\begin_layout Plain Layout
+
+    width=9cm,
+ height=8cm,
+\end_layout
+
+\begin_layout Plain Layout
+
+    xmin=1,
+ xmax=10,
+\end_layout
+
+\begin_layout Plain Layout
+
+    ymode=log,
+ % scala logaritmica
+\end_layout
+
+\begin_layout Plain Layout
+
+    legend pos=north west
+\end_layout
+
+\begin_layout Plain Layout
+
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+
+    % logaritmo
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[blue,
+ thick,
+ samples=100,
+ domain=1:100] {ln(x)};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addlegendentry{$ln(x)$}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    % polinomio
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[red,
+ thick,
+ samples=100,
+ domain=1:100] {x^2};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addlegendentry{$x^2$}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    % esponenziale
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[green!60!black,
+ thick,
+ samples=100,
+ domain=1:100] {exp(x)};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addlegendentry{$e^x$}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    % fattoriale
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[orange,
+ thick,
+ samples=10,
+ domain=1:100] {x!};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addlegendentry{$x!$}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    % x^x
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[purple,
+ thick,
+ samples=100,
+ domain=1:100] {x^x};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addlegendentry{$x^x$}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+NB.
+
+\series default
+ È corretto visualizzare 
+\begin_inset Formula $f(x)=x!$
+\end_inset
+
+ a 
+\begin_inset Quotes eld
+\end_inset
+
+gradini
+\begin_inset Quotes erd
+\end_inset
+
+ dato che la funzione è definita solo per 
+\begin_inset Formula $x\in\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 Studio di Funzione
 \end_layout
@@ -1953,7 +3025,7 @@ begin{axis}[
 addplot[blue,
  thick,
  samples=200,
- domain=-3:3] {sqrt(x)};
+ domain=0:10] {sqrt(x)};
 \end_layout
 
 \begin_layout Plain Layout
@@ -2578,8 +3650,159 @@ end{center}
 
 \end_layout
 
+\begin_layout Subsubsection
+\begin_inset Formula $f(x)=e^{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+    axis lines=middle,
+\end_layout
+
+\begin_layout Plain Layout
+
+    xlabel={$x$},
+ ylabel={$y$},
+\end_layout
+
+\begin_layout Plain Layout
+
+    width=15cm,
+ height=6cm
+\end_layout
+
+\begin_layout Plain Layout
+
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+
+    % esponenziale
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[green!60!black,
+ thick,
+ samples=100,
+ domain=90:100] {exp(x)};
+\end_layout
+
+\begin_layout Plain Layout
+
+  
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 Studio della convergenza
+\end_layout
+
+\begin_layout Subsection
+Condizione necessaria di convergenza
+\end_layout
+
+\begin_layout Standard
+Affinche una serie converga è necessario che il 
+\emph on
+termine generale 
+\emph default
+
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ 
+\emph on
+sia infinitesimo
+\emph default
+ (Ovvero 
+\begin_inset Formula $a_{n}\to0$
+\end_inset
+
+ per 
+\begin_inset Formula $n\to+\infty$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+\emph on
+NB.
+
+\series default
+ Non è necessario svolgere questo l'imite durante la risoluzione,
+ ma sicuramente è comodo da fare.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+NB.
+
+\series default
+ Se il risultato del limite è 
+\begin_inset Formula $0$
+\end_inset
+
+ la serie può divergere o convergere il fatto che il risultato sia 0 è necessario solo per la divergenza ma non sufficiente.
 \end_layout
 
 \begin_layout Subsection
@@ -2713,55 +3936,35 @@ NB.
 \end_layout
 
 \begin_layout Subsection
-Condizione necessaria di convergenza
+Serie armoniche
 \end_layout
 
 \begin_layout Standard
-Affinche una serie converga è necessario che il 
-\emph on
-termine generale 
-\emph default
-
-\begin_inset Formula $a_{n}$
+\begin_inset Formula $\stackrel[n=1]{\infty}{\sum}\frac{1}{n^{\alpha}}$
 \end_inset
 
  
-\emph on
-sia infinitesimo
-\emph default
- (Ovvero 
-\begin_inset Formula $a_{n}\to0$
-\end_inset
-
- per 
-\begin_inset Formula $n\to+\infty$
-\end_inset
-
-)
-\end_layout
-
-\begin_layout Subsection
-Criteri con condizioni sufficienti per la convergenza
-\end_layout
-
-\begin_layout Standard
-Serie a termini non negativi
 \begin_inset Formula $\begin{cases}
-\text{criterio del rapporto}\\
-\text{criterio della radice}\\
-\text{criterio del confronto}\\
-\text{criterio del confronto asintotico}
+\text{converge} & \text{se }\alpha>1\\
+\text{diverge} & \text{se }\alpha\leq1
 \end{cases}$
 \end_inset
 
 
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Subsubsection
+Serie armoniche generalizzate
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\stackrel[n=2]{\infty}{\sum}\frac{1}{n^{\alpha}(log\,n)^{\beta}}$
 \end_inset
 
-Serie a termini di segno variabile
+
 \begin_inset Formula $\begin{cases}
-\text{Criterio dell'assoluta convergenza}\\
-\text{criterio di Leibniz}
+\text{converge} & \text{se }\alpha>1\text{ oppure }\alpha=1\text{ e }\beta>1\\
+\text{diverge} & \text{se }\alpha<1\text{ oppure }\alpha=1\text{ e }\beta\leq1
 \end{cases}$
 \end_inset
 
@@ -2820,11 +4023,35 @@ NB.
 \end_layout
 
 \begin_layout Subsection
-Criteri di convergenza
+Criteri con condizioni sufficienti per la convergenza
 \end_layout
 
-\begin_layout Subsubsection*
-Criterio del rapporto
+\begin_layout Standard
+Serie a termini non negativi
+\begin_inset Formula $\begin{cases}
+\text{criterio del rapporto}\\
+\text{criterio della radice}\\
+\text{criterio del confronto}\\
+\text{criterio del confronto asintotico}
+\end{cases}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Serie a termini di segno variabile
+\begin_inset Formula $\begin{cases}
+\text{criterio dell'assoluta convergenza}\\
+\text{criterio di Leibniz}
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Criterio del rapporto (D’Alembert)
 \end_layout
 
 \begin_layout Standard
@@ -3026,42 +4253,6 @@ Le implicazioni inverse in generale non valgono.
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
-
-Serie armoniche generalizzate:
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\stackrel[n=1]{\infty}{\sum}\frac{1}{n^{\alpha}}$
-\end_inset
-
- 
-\begin_inset Formula $\begin{cases}
-\text{converge} & \text{se }\alpha>1\\
-\text{diverge} & \text{se }\alpha\leq1
-\end{cases}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-\begin_inset Formula $\stackrel[n=2]{\infty}{\sum}\frac{1}{n^{\alpha}(log\,n)^{\beta}}$
-\end_inset
-
-
-\begin_inset Formula $\begin{cases}
-\text{converge} & \text{se }\alpha>1\text{ oppure }\alpha=1\text{ e }\beta>1\\
-\text{diverge} & \text{se }\alpha<1\text{ oppure }\alpha=1\text{ e }\beta\leq1
-\end{cases}$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
 \series bold
 Esempio:
 
@@ -3138,6 +4329,163 @@ Esempio:
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Subsubsection
+Criterio dell'assoluta convergenza
+\end_layout
+
+\begin_layout Standard
+Una serie 
+\begin_inset Formula $\stackrel[n=1]{+\infty}{\sum}a_{n}$
+\end_inset
+
+ si dice 
+\series bold
+assolutamente convergente
+\series default
+ se la serie dei moduli ad essa associata 
+\begin_inset Formula $\stackrel[n=1]{+\infty}{\sum}|a_{n}|$
+\end_inset
+
+ è 
+\series bold
+convergente
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+Come studiare il carattere della serie associata?
+\end_layout
+
+\begin_layout Itemize
+Studio il carattere di 
+\begin_inset Formula $|a_{n}|$
+\end_inset
+
+ essendo questa per forza ora una serie a termini positivi uso i criteri delle serie a termini non negativi.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Se la serie dei moduli (
+\begin_inset Formula $|a_{n}|$
+\end_inset
+
+) 
+\series bold
+converge
+\series default
+,
+ allora la serie di partenza 
+\series bold
+convergerà assolutamente
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+Se la serie dei moduli (
+\begin_inset Formula $|a_{n}|$
+\end_inset
+
+) diverge (positivamente dato che è per forza a termini positivi),
+ allora la serie di partenza (
+\begin_inset Formula $\stackrel[n=1]{+\infty}{\sum}a_{n}$
+\end_inset
+
+) non convergerà assolutamente,
+ 
+\series bold
+questa può divergere o convergere,
+ in tal caso si dice che converge semplicemente.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Criterio di Leibniz
+\end_layout
+
+\begin_layout Standard
+Sia 
+\begin_inset Formula $\stackrel[n=1]{+\infty}{\sum}(-1)^{n}a_{n}$
+\end_inset
+
+ una serie di segno variabile,
+ con 
+\begin_inset Formula $a_{n}\geq0$
+\end_inset
+
+ 
+\begin_inset Formula $\forall n\in\mathbb{N}$
+\end_inset
+
+.
+ Se valgolo le seguenti ipotesi:
+\end_layout
+
+\begin_layout Enumerate
+Esiste il limite:
+ 
+\begin_inset Formula $\underset{n\to+\infty}{lim}a_{n}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ sia definitivamente decrescente,
+ quindi basta verificare che:
+ 
+\begin_inset Formula $a_{n}\geq a_{n+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Se entrambe valgono allora,
+ il criterio di Leibniz stabilisce che la serie 
+\begin_inset Formula $\stackrel[n=1]{+\infty}{\sum}(-1)^{n}a_{n}$
+\end_inset
+
+ converge.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Nel caso in cui uno dei due punti non fosse verificato:
+\end_layout
+
+\begin_layout Itemize
+Se non vale la 
+\series bold
+condizione 1
+\series default
+ allora la serie 
+\series bold
+diverge
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+Se vale la condizione 1 ma non vale la condizione 2,
+ allora il criterio di 
+\series bold
+Leibniz non si può applicare
+\series default
+,
+ bisogna cambiare criterio.
 \end_layout
 
 \end_body
