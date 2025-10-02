@@ -1208,8 +1208,7 @@ begin{axis}[
 
 \begin_layout Plain Layout
 
-    xmin=1,
- xmax=5,
+    ymin=-2,
 \end_layout
 
 \begin_layout Plain Layout
@@ -1220,7 +1219,7 @@ begin{axis}[
 
 \begin_layout Plain Layout
 
-    legend pos=north west
+    legend pos=south east
 \end_layout
 
 \begin_layout Plain Layout
@@ -1240,7 +1239,7 @@ begin{axis}[
 addplot[blue,
  thick,
  samples=100,
- domain=1:5] {ln(x)};
+ domain=1:3] {ln(x)};
 \end_layout
 
 \begin_layout Plain Layout
@@ -1267,7 +1266,7 @@ addlegendentry{$ln(x)$}
 addplot[red,
  thick,
  samples=100,
- domain=1:5] {x^2};
+ domain=1:3] {x^2};
 \end_layout
 
 \begin_layout Plain Layout
@@ -1294,7 +1293,7 @@ addlegendentry{$x^2$}
 addplot[green!60!black,
  thick,
  samples=100,
- domain=1:5] {exp(x)};
+ domain=1:3] {exp(x)};
 \end_layout
 
 \begin_layout Plain Layout
@@ -1321,7 +1320,7 @@ addlegendentry{$e^x$}
 addplot[orange,
  thick,
  samples=10000,
- domain=1:5] {x!};
+ domain=1:3] {x!};
 \end_layout
 
 \begin_layout Plain Layout
@@ -1348,7 +1347,7 @@ addlegendentry{$x!$}
 addplot[purple,
  thick,
  samples=100,
- domain=1:5] {x^x};
+ domain=1:3] {x^x};
 \end_layout
 
 \begin_layout Plain Layout
@@ -1419,12 +1418,6 @@ begin{axis}[
 
 \begin_layout Plain Layout
 
-    xmin=1,
- xmax=10,
-\end_layout
-
-\begin_layout Plain Layout
-
     ymode=log,
  % scala logaritmica
 \end_layout
@@ -1451,7 +1444,7 @@ begin{axis}[
 addplot[blue,
  thick,
  samples=100,
- domain=1:100] {ln(x)};
+ domain=1:50] {ln(x)};
 \end_layout
 
 \begin_layout Plain Layout
@@ -1478,7 +1471,7 @@ addlegendentry{$ln(x)$}
 addplot[red,
  thick,
  samples=100,
- domain=1:100] {x^2};
+ domain=1:50] {x^2};
 \end_layout
 
 \begin_layout Plain Layout
@@ -1504,8 +1497,8 @@ addlegendentry{$x^2$}
 \backslash
 addplot[green!60!black,
  thick,
- samples=100,
- domain=1:100] {exp(x)};
+ samples=50,
+ domain=1:50] {exp(x)};
 \end_layout
 
 \begin_layout Plain Layout
@@ -1532,7 +1525,7 @@ addlegendentry{$e^x$}
 addplot[orange,
  thick,
  samples=10,
- domain=1:100] {x!};
+ domain=1:50] {x!};
 \end_layout
 
 \begin_layout Plain Layout
@@ -1559,7 +1552,7 @@ addlegendentry{$x!$}
 addplot[purple,
  thick,
  samples=100,
- domain=1:100] {x^x};
+ domain=1:50] {x^x};
 \end_layout
 
 \begin_layout Plain Layout
