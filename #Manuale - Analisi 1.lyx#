@@ -1117,7 +1117,7 @@ Potenze
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\frac{a^{n}}{b^{n}}=(\frac{a}{b})^{n}$
+\begin_inset Formula $\frac{a}{}$
 \end_inset
 
 
@@ -1131,9 +1131,6 @@ Potenze
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\frac{a^{n}}{a^{p}}=a^{n-p}$
-\end_inset
-
 
 \end_layout
 
@@ -1145,9 +1142,6 @@ Potenze
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $(a^{n})^{p}=a^{n^{p}}=a^{n*p}$
-\end_inset
-
 
 \end_layout
 
@@ -1159,9 +1153,6 @@ Potenze
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $a^{0}=1$
-\end_inset
-
 
 \end_layout
 

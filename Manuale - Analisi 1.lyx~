@@ -1219,7 +1219,7 @@ begin{axis}[
 
 \begin_layout Plain Layout
 
-    legend pos=north west
+    legend pos=south east
 \end_layout
 
 \begin_layout Plain Layout
