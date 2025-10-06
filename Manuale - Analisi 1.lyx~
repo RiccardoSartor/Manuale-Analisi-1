@@ -971,14 +971,35 @@ F.
 \end_layout
 
 \begin_layout Section
-Proprietà dei Logaritmi
+Proprietà dei Logaritmi e delle potenze
 \end_layout
 
 \begin_layout Standard
 \begin_inset Tabular
-<lyxtabular version="3" rows="5" columns="1">
+<lyxtabular version="3" rows="1" columns="2">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" toplineltrim="true" toplinertrim="true" bottomlineltrim="true" bottomlinertrim="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Logaritmi
+\end_layout
+
+\end_inset
+</cell>
+</row>
 <row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
@@ -1041,6 +1062,114 @@ Proprietà dei Logaritmi
 
 \begin_layout Plain Layout
 \begin_inset Formula $log_{a}(b)=\frac{1}{log_{b}(a)}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" toplineltrim="true" toplinertrim="true" bottomlineltrim="true" bottomlinertrim="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Potenze
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a^{n}*b^{n}=(a*b)^{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{a^{n}}{b^{n}}=(\frac{a}{b})^{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{a^{n}}{a^{p}}=a^{n-p}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $(a^{n})^{p}=a^{n^{p}}=a^{n*p}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $a^{0}=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
 \end_inset
 
 
@@ -1256,6 +1385,37 @@ addlegendentry{$ln(x)$}
 
 \begin_layout Plain Layout
 
+    % radice
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[yellow,
+ thick,
+ samples=100,
+ domain=1:3] {sqrt(x)};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addlegendentry{$sqrt(x)$}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
     % polinomio
 \end_layout
 
@@ -1452,6 +1612,33 @@ addplot[blue,
     
 \backslash
 addlegendentry{$ln(x)$}
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    % radice
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addplot[yellow,
+ thick,
+ samples=100,
+ domain=1:50] {sqrt(x)};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+addlegendentry{$sqrt(x)$}
 \end_layout
 
 \begin_layout Plain Layout
@@ -4162,9 +4349,9 @@ begin{axis}[
 
     
 \backslash
-addplot[green!60!black,
+addplot[blue,
  thick,
- samples=100,
+ samples=200,
  domain=90:100] {exp(x)};
 \end_layout
 
@@ -4847,8 +5034,15 @@ Se la serie dei moduli (
 ) non convergerà assolutamente,
  
 \series bold
-questa può divergere o convergere,
- in tal caso si dice che converge semplicemente.
+questa può divergere o convergere semplicemente.
+\begin_inset Newline newline
+\end_inset
+
+NB.
+ 
+\series default
+Per capire se converge o diverge semplicemente va trovato un nuovo modo nonostante il criterio usato dentro all'assoluta convergenza abbia dato la divergenza come soluzione.
+ (Per martin fai il limite della condizione necessaria di convergenza)
 \end_layout
 
 \end_deeper
