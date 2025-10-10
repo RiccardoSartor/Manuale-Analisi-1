@@ -5032,9 +5032,9 @@ Se la serie dei moduli (
 \end_inset
 
 ) non convergerà assolutamente,
- 
+
 \series bold
-questa può divergere o convergere semplicemente.
+ converge o diverge semplicemente.
 \begin_inset Newline newline
 \end_inset
 
@@ -5129,6 +5129,328 @@ Leibniz non si può applicare
 \series default
 ,
  bisogna cambiare criterio.
+\end_layout
+
+\begin_layout Part
+Equazioni Differenziali
+\end_layout
+
+\begin_layout Standard
+L'ordine di un'equazione differenziale è il massimo ordine di derivazione che compare (esempio:
+ 
+\begin_inset Formula $f'''(x)+3f'(x)=9x$
+\end_inset
+
+ è di ordine 
+\begin_inset Formula $3$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+ESEMPIO:
+ 
+\begin_inset Formula $f'(x)=x\Rightarrow y'=x$
+\end_inset
+
+ 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ equazione di 1° ordine.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Le equazioni di 
+\series bold
+1° Ordine
+\series default
+ possono essere:
+\end_layout
+
+\begin_layout Enumerate
+Equazioni differenziali 
+\series bold
+
+\begin_inset Quotes eld
+\end_inset
+
+Elementari
+\begin_inset Quotes erd
+\end_inset
+
+
+\series default
+ (e 
+\series bold
+Problemi di Cauchy
+\series default
+)
+\end_layout
+
+\begin_layout Enumerate
+Equazioni differenziali a 
+\series bold
+variabili separabili
+\end_layout
+
+\begin_layout Enumerate
+Equazioni differenziali 
+\series bold
+lineari
+\end_layout
+
+\begin_layout Subsection
+Equazioni differenziali 
+\begin_inset Quotes eld
+\end_inset
+
+ELEMENTARI
+\begin_inset Quotes erd
+\end_inset
+
+ e 
+\begin_inset Quotes eld
+\end_inset
+
+PROBLEMI DI CAUCHY
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Tipologia 1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y'=f(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Basta integrare:
+ 
+\begin_inset Formula $y=\int f(x)dx=F(x)+c$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ESEMPIO:
+ 
+\begin_inset Formula $y'=3e^{2x}\Rightarrow y=\int3e^{2x}dx=3\int e^{2x}dx=\frac{3}{2}e^{2x}+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Tipologia 2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y''=f(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Basta integrare 2 volte:
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y'=\int f(x)dx=F(x)+c_{1}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $y=\int y'dx=\int[F(x)+c_{1}x]dx=\int F(x)+c_{1}x+c_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ESEMPIO:
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $y''=2-cosx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $y'=\int(2-cosx)dx=2x-sinx+c_{1}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $y=\int(2x-sinx+c_{1})dx=x^{2}+cosx+c_{1}x+c_{2}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $y(x)=x^{2}+cosx+c_{1}+c_{2}$
+\end_inset
+
+ (soluzione generale)
+\end_layout
+
+\begin_layout Subsubsection
+Problema di CAUCHY
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+\text{Equazione differenziale}\\
+\text{Condizion iniziali (tante quanti i parametri da determinare)}
+\end{cases}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Esempio 1:
+\begin_inset Formula $\begin{cases}
+y'=-e^{-x} & y=\int(-e^{-x})dx=e^{-x}+c\\
+y(0)=3 & 3=e^{-0}+c\Rightarrow c=2
+\end{cases}$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow y(x)=e^{-x}+2$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Esempio 2:
+\begin_inset Formula $\begin{cases}
+y'=x & y'=\int xdx=\frac{x^{2}}{2}+c_{1}\Rightarrow y=\int(\frac{x^{2}}{2}+c_{1})dx=\frac{x^{3}}{6}+c_{1}x+c_{2}\\
+y(0)=1 & 1=\frac{0^{3}}{6}+c_{1}*0+c_{2}\Rightarrow c_{2}=1\\
+y'(0)=4 & 4=\frac{0^{2}}{2}+c_{1}\Rightarrow c_{1}=4
+\end{cases}$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow y(x)=\frac{x^{3}}{6}+x+4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Equazioni differenziali 
+\begin_inset Quotes eld
+\end_inset
+
+A variabili separabili
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sono equazioni che si possono ricondurre alla forma:
+ 
+\begin_inset Formula $y'=f(x)*g(y)$
+\end_inset
+
+,
+ ad esempio:
+ 
+\begin_inset Formula $y'=lnx$
+\end_inset
+
+ oppure 
+\begin_inset Formula $y'=e^{x}y\,lny$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Strategia risolutiva:
+\end_layout
+
+\begin_layout Enumerate
+Separo le variabili 
+\begin_inset Formula $x$
+\end_inset
+
+ e 
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Integro ciascun membro alla variabile da cui dipende
+\end_layout
+
+\begin_layout Enumerate
+Ricavo 
+\begin_inset Formula $y(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esempio:
+\end_layout
+
+\begin_layout Standard
+y'=
 \end_layout
 
 \end_body

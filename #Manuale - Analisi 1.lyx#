@@ -5516,21 +5516,16 @@ y(\frac{\pi}{2})=1\Rightarrow-ln(cos(\frac{\pi}{2})+c)=1\Rightarrow ln(c)=-1\Rig
 \begin_inset Newline newline
 \end_inset
 
-
-\series bold
 NB.
-
-\series default
  
 \begin_inset Formula $y'=f(x)*g(y)$
 \end_inset
 
  se 
-\begin_inset Formula $\exists\bar{y}\in\mathbb{R}/g(\bar{y})=0\Rightarrow y(x)=\bar{y}$
+\begin_inset Formula $\exists\overset{\text{\_}}{y}$
 \end_inset
 
- è una soluzione dell'equazione differenziale.
- (Conviene prima cercare questo tipo di soluzione e poi proseguire con il procedimento standard)
+
 \end_layout
 
 \end_body
