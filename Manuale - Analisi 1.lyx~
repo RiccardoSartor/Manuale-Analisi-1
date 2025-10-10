@@ -5379,6 +5379,10 @@ y(0)=3 & 3=e^{-0}+c\Rightarrow c=2
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \emph on
 Esempio 2
 \emph default
@@ -5538,6 +5542,10 @@ y(\frac{\pi}{2})=1\Rightarrow-ln(cos(\frac{\pi}{2})+c)=1\Rightarrow ln(c)=-1\Rig
 
  
 \begin_inset Formula $\Rightarrow y(x)=-ln(cosx+\frac{1}{e})$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 

@@ -5254,6 +5254,10 @@ Basta integrare:
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \emph on
 Esempio
 \emph default
@@ -5372,6 +5376,10 @@ y(0)=3 & 3=e^{-0}+c\Rightarrow c=2
 
  
 \begin_inset Formula $\Rightarrow y(x)=e^{-x}+2$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
@@ -5538,6 +5546,10 @@ y(\frac{\pi}{2})=1\Rightarrow-ln(cos(\frac{\pi}{2})+c)=1\Rightarrow ln(c)=-1\Rig
 
  
 \begin_inset Formula $\Rightarrow y(x)=-ln(cosx+\frac{1}{e})$
+\end_inset
+
+
+\begin_inset Newline newline
 \end_inset
 
 
