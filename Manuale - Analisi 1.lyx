@@ -5149,7 +5149,11 @@ L'ordine di un'equazione differenziale è il massimo ordine di derivazione che c
 \begin_inset Newline newline
 \end_inset
 
-ESEMPIO:
+
+\emph on
+Esempio
+\emph default
+:
  
 \end_layout
 
@@ -5249,7 +5253,11 @@ Basta integrare:
 \begin_inset Newline newline
 \end_inset
 
-ESEMPIO:
+
+\emph on
+Esempio
+\emph default
+:
 \end_layout
 
 \begin_layout Standard
@@ -5293,7 +5301,11 @@ Basta integrare 2 volte:
 \begin_inset Newline newline
 \end_inset
 
-ESEMPIO:
+
+\emph on
+Esempio
+\emph default
+:
  
 \end_layout
 
@@ -5344,7 +5356,11 @@ Problema di CAUCHY
 \begin_inset Newline newline
 \end_inset
 
-Esempio 1:
+
+\emph on
+Esempio 1
+\emph default
+:
 \end_layout
 
 \begin_layout Standard
@@ -5362,7 +5378,11 @@ y(0)=3 & 3=e^{-0}+c\Rightarrow c=2
 \begin_inset Newline newline
 \end_inset
 
-Esempio 2:
+
+\emph on
+Esempio 2
+\emph default
+:
 \end_layout
 
 \begin_layout Standard
@@ -5448,7 +5468,11 @@ Ricavo
 \end_layout
 
 \begin_layout Standard
-Esempio 1:
+
+\emph on
+Esempio 1
+\emph default
+:
 \end_layout
 
 \begin_layout Standard
@@ -5498,7 +5522,11 @@ Esempio 1:
 \begin_inset Newline newline
 \end_inset
 
-Esempio 2:
+
+\emph on
+Esempio 2
+\emph default
+:
 \end_layout
 
 \begin_layout Standard
@@ -5531,6 +5559,257 @@ NB.
 
  è una soluzione dell'equazione differenziale.
  (Conviene prima cercare questo tipo di soluzione e poi proseguire con il procedimento standard)
+\end_layout
+
+\begin_layout Subsection
+Equazioni lineari del 
+\begin_inset Quotes eld
+\end_inset
+
+1° Ordine
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y'(x)+a(x)\,y(x)=f(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\emph on
+Esempi
+\emph default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y'-xy=2x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y'+\frac{1}{x}*y=4x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pre check:
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $a(x)=0$
+\end_inset
+
+ è elementare
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $f(x)=0$
+\end_inset
+
+ (omogenea) diventa a variabili separabili
+\end_layout
+
+\begin_layout Standard
+Se non è nessuno dei due casi descritti procedo con un nuovo sistema:
+\end_layout
+
+\begin_layout Enumerate
+Trovo una primitiva di 
+\begin_inset Formula $a(x)$
+\end_inset
+
+,
+ cioè una funzione 
+\begin_inset Formula $A(x)$
+\end_inset
+
+ tale che 
+\begin_inset Formula $A'(x)=a(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Moltiplico entrambi i membri per 
+\begin_inset Formula $e^{A(x)}$
+\end_inset
+
+:
+ 
+\begin_inset Formula $y'(x)e^{A(x)}+a(x)e^{A(x)}y(x)=f(x)e^{A(x)}$
+\end_inset
+
+ (Noto che la parte a sinistra di 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $=$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ altro non è che:
+ 
+\begin_inset Formula $[y(x)e^{A(x)}]'$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Integro i membri 
+\begin_inset Formula $y(x)e^{A(x)}=\int f(x)e^{A(x)}dx+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Ricavo 
+\begin_inset Formula $y(x)$
+\end_inset
+
+ moltiplicando i membri per 
+\begin_inset Formula $e^{-A(x)}$
+\end_inset
+
+:
+ 
+\begin_inset Formula $y(x)=e^{-A(x)}\int f(x)e^{A(x)}dx+ce^{-A(x)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Esempio 1
+\emph default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y'(x)=-xy(x)=2x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A(x)=\int-x\,dx=\frac{x^{2}}{2}$
+\end_inset
+
+ (Notiamo che 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $+c$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ non è importante in quanto il risutlato di questo integrale verrà inserito in un altro integrale)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y'(x)e^{-\frac{x^{2}}{2}}-xe^{-\frac{x^{2}}{2}}y(x)=2xe^{-\frac{x^{2}}{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y(x)e^{-\frac{x^{2}}{2}}=\int2xe^{-\frac{x^{2}}{2}}dx+c=-2e^{-\frac{x^{2}}{2}}+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y(x)e^{-\frac{x^{2}}{2}}e^{\frac{x^{2}}{2}}=-2e^{-\frac{x^{2}}{2}}e^{\frac{x^{2}}{2}}+ce^{\frac{x^{2}}{2}}\Rightarrow y(x)=-2+ce^{\frac{x^{2}}{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Osservazione 1
+\emph default
+:
+ Se 
+\begin_inset Formula $a(x)$
+\end_inset
+
+ e 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ sono funzioni continue in un certo intervallo 
+\begin_inset Formula $I$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $y(x)=e^{-A(x)}\int f(x)e^{A(x)}dx+ce^{-A(x)}$
+\end_inset
+
+ è la soluzione generale 
+\begin_inset Formula $\forall x\in I$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\emph on
+Osservazione 2
+\emph default
+:
+ La costante arbitraria 
+\begin_inset Formula $c\in\mathbb{R}$
+\end_inset
+
+ può essere determinata se viene fornita una condizione iniziale del tipo:
+ 
+\begin_inset Formula $y(x_{0})=y_{0}$
+\end_inset
+
+ con 
+\begin_inset Formula $x_{0}\in I\Rightarrow\begin{cases}
+y'(x)+a(x)y(x)=f(x)\\
+y(x_{0})=y_{0}
+\end{cases}$
+\end_inset
+
+
 \end_layout
 
 \end_body

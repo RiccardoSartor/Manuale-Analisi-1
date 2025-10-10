@@ -5149,8 +5149,15 @@ L'ordine di un'equazione differenziale è il massimo ordine di derivazione che c
 \begin_inset Newline newline
 \end_inset
 
-ESEMPIO:
+
+\emph on
+Esempio
+\emph default
+:
  
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $f'(x)=x\Rightarrow y'=x$
 \end_inset
 
@@ -5246,8 +5253,14 @@ Basta integrare:
 \begin_inset Newline newline
 \end_inset
 
-ESEMPIO:
- 
+
+\emph on
+Esempio
+\emph default
+:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $y'=3e^{2x}\Rightarrow y=\int3e^{2x}dx=3\int e^{2x}dx=\frac{3}{2}e^{2x}+c$
 \end_inset
 
@@ -5267,70 +5280,57 @@ Tipologia 2
 \end_inset
 
 Basta integrare 2 volte:
-\begin_inset Tabular
-<lyxtabular version="3" rows="1" columns="1">
-<features tabularvalignment="middle">
-<column alignment="left" valignment="top">
-<row>
-<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
+\end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset Formula $y'=\int f(x)dx=F(x)+c_{1}$
-\end_inset
-
-
-\begin_inset Newline newline
-\end_inset
-
-
-\begin_inset Formula $y=\int y'dx=\int[F(x)+c_{1}x]dx=\int F(x)+c_{1}x+c_{2}$
 \end_inset
 
 
 \end_layout
 
-\end_inset
-</cell>
-</row>
-</lyxtabular>
-
+\begin_layout Standard
+\begin_inset Formula $y=\int y'dx=\int[F(x)+c_{1}x]dx=\int F(x)+c_{1}x+c_{2}$
 \end_inset
 
 
 \begin_inset Newline newline
 \end_inset
 
-ESEMPIO:
+
+\begin_inset Newline newline
+\end_inset
+
+
+\emph on
+Esempio
+\emph default
+:
  
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
-
+\begin_layout Standard
 \begin_inset Formula $y''=2-cosx$
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
-
+\begin_layout Standard
 \begin_inset Formula $y'=\int(2-cosx)dx=2x-sinx+c_{1}$
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
-
+\begin_layout Standard
 \begin_inset Formula $y=\int(2x-sinx+c_{1})dx=x^{2}+cosx+c_{1}x+c_{2}$
 \end_inset
 
 
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
-
+\begin_layout Standard
 \begin_inset Formula $y(x)=x^{2}+cosx+c_{1}+c_{2}$
 \end_inset
 
@@ -5352,7 +5352,18 @@ Problema di CAUCHY
 \begin_inset Newline newline
 \end_inset
 
-Esempio 1:
+
+\begin_inset Newline newline
+\end_inset
+
+
+\emph on
+Esempio 1
+\emph default
+:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\begin{cases}
 y'=-e^{-x} & y=\int(-e^{-x})dx=e^{-x}+c\\
 y(0)=3 & 3=e^{-0}+c\Rightarrow c=2
@@ -5367,7 +5378,14 @@ y(0)=3 & 3=e^{-0}+c\Rightarrow c=2
 \begin_inset Newline newline
 \end_inset
 
-Esempio 2:
+
+\emph on
+Esempio 2
+\emph default
+:
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula $\begin{cases}
 y'=x & y'=\int xdx=\frac{x^{2}}{2}+c_{1}\Rightarrow y=\int(\frac{x^{2}}{2}+c_{1})dx=\frac{x^{3}}{6}+c_{1}x+c_{2}\\
 y(0)=1 & 1=\frac{0^{3}}{6}+c_{1}*0+c_{2}\Rightarrow c_{2}=1\\
@@ -5443,14 +5461,355 @@ Ricavo
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-Esempio:
+
+\emph on
+Esempio 1
+\emph default
+:
 \end_layout
 
 \begin_layout Standard
-y'=
+\begin_inset Formula $y'=y^{2}\,lnx\Rightarrow\frac{dy}{dx}=y^{2}\,lnx\Rightarrow\frac{dy}{y^{2}}=lnx\,dx$
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="1">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Rightarrow\int\frac{dy}{y^{2}}=\int lnx\,dx$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow-\frac{1}{y}=x\,lnx-x+c$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow y(x)=\frac{-1}{x\,lnx-x+c}$
+\end_inset
+
+ (va bene anche 
+\begin_inset Formula $y(x)=0$
+\end_inset
+
+)
+\begin_inset Newline newline
+\end_inset
+
+
+\emph on
+Esempio 2
+\emph default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+y'=sinx\,e^{y}\Rightarrow\frac{dy}{dx}=sinx\,e^{y}\Rightarrow\int e^{-y}dy=\int sinx\,dx\Rightarrow e^{-y}=cosx+c\Rightarrow y(x)=-ln(cosx+c)\\
+y(\frac{\pi}{2})=1\Rightarrow-ln(cos(\frac{\pi}{2})+c)=1\Rightarrow ln(c)=-1\Rightarrow c=\frac{1}{e}
+\end{cases}$
+\end_inset
+
+ 
+\begin_inset Formula $\Rightarrow y(x)=-ln(cosx+\frac{1}{e})$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+NB.
+
+\series default
+ 
+\begin_inset Formula $y'=f(x)*g(y)$
+\end_inset
+
+ se 
+\begin_inset Formula $\exists\bar{y}\in\mathbb{R}/g(\bar{y})=0\Rightarrow y(x)=\bar{y}$
+\end_inset
+
+ è una soluzione dell'equazione differenziale.
+ (Conviene prima cercare questo tipo di soluzione e poi proseguire con il procedimento standard)
+\end_layout
+
+\begin_layout Subsection
+Equazioni lineari del 
+\begin_inset Quotes eld
+\end_inset
+
+1° Ordine
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y'(x)+a(x)\,y(x)=f(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\emph on
+Esempi
+\emph default
+:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y'-xy=2x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $y'+\frac{1}{x}*y=4x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pre check:
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $a(x)=0$
+\end_inset
+
+ è elementare
+\end_layout
+
+\begin_layout Itemize
+Se 
+\begin_inset Formula $f(x)=0$
+\end_inset
+
+ (omogenea) diventa a variabili separabili
+\end_layout
+
+\begin_layout Standard
+Se non è nessuno dei due casi descritti procedo con un nuovo sistema:
+\end_layout
+
+\begin_layout Enumerate
+Trovo una primitiva di 
+\begin_inset Formula $a(x)$
+\end_inset
+
+,
+ cioè una funzione 
+\begin_inset Formula $A(x)$
+\end_inset
+
+ tale che 
+\begin_inset Formula $A'(x)=a(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Moltiplico entrambi i membri per 
+\begin_inset Formula $e^{A(x)}$
+\end_inset
+
+:
+ 
+\begin_inset Formula $y'(x)e^{A(x)}+a(x)e^{A(x)}y(x)=f(x)e^{A(x)}$
+\end_inset
+
+ (Noto che la parte a sinistra di 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $=$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ altro non è che:
+ 
+\begin_inset Formula $[y(x)e^{A(x)}]'$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Enumerate
+Integro i membri 
+\begin_inset Formula $y(x)e^{A(x)}=\int f(x)e^{A(x)}dx+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Ricavo 
+\begin_inset Formula $y(x)$
+\end_inset
+
+ moltiplicando i membri per 
+\begin_inset Formula $e^{-A(x)}$
+\end_inset
+
+:
+ 
+\begin_inset Formula $y(x)=e^{-A(x)}\int f(x)e^{A(x)}dx+ce^{-A(x)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Esempio 1
+\emph default
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y'(x)=-xy(x)=2x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A(x)=\int-x\,dx=\frac{x^{2}}{2}$
+\end_inset
+
+ (Notiamo che 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $+c$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ non è importante in quanto il risutlato di questo integrale verrà inserito in un altro integrale)
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y'(x)e^{-\frac{x^{2}}{2}}-xe^{-\frac{x^{2}}{2}}y(x)=2xe^{-\frac{x^{2}}{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y(x)e^{-\frac{x^{2}}{2}}=\int2xe^{-\frac{x^{2}}{2}}dx+c=-2e^{-\frac{x^{2}}{2}}+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y(x)e^{-\frac{x^{2}}{2}}e^{\frac{x^{2}}{2}}=-2e^{-\frac{x^{2}}{2}}e^{\frac{x^{2}}{2}}+ce^{\frac{x^{2}}{2}}\Rightarrow y(x)=-2+ce^{\frac{x^{2}}{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Osservazione 1
+\emph default
+:
+ Se 
+\begin_inset Formula $a(x)$
+\end_inset
+
+ e 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ sono funzioni continue in un certo intervallo 
+\begin_inset Formula $I$
+\end_inset
+
+,
+ allora 
+\begin_inset Formula $y(x)=e^{-A(x)}\int f(x)e^{A(x)}dx+ce^{-A(x)}$
+\end_inset
+
+ è la soluzione generale 
+\begin_inset Formula $\forall x\in I$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\emph on
+Osservazione 2
+\emph default
+:
+ La costante arbitraria 
+\begin_inset Formula $c\in\mathbb{R}$
+\end_inset
+
+ può essere determinata se viene fornita una condizione iniziale del tipo:
+ 
+\begin_inset Formula $y(x_{0})=y_{0}$
+\end_inset
+
+ con 
+\begin_inset Formula $x_{0}\in I\Rightarrow\begin{cases}
+y'(x)+a(x)y(x)=f(x)\\
+y(x_{0})=y_{0}
+\end{cases}$
+\end_inset
+
+
 \end_layout
 
 \end_body
