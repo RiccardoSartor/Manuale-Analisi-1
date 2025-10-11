@@ -1287,6 +1287,44 @@ Somma asintotica
 \end_layout
 
 \begin_layout Section
+Circonferenza Goniometrica
+\end_layout
+
+\begin_layout Standard
+Circonferenza di raggio unitario situato al centro di un piano cartesiano con centro nell'origine degli assi.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[width=25em]{./images/cerchio_goniometrico.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Ordini di infinito
 \end_layout
 
