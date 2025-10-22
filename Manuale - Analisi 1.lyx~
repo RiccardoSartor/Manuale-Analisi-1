@@ -5169,6 +5169,169 @@ Leibniz non si può applicare
  bisogna cambiare criterio.
 \end_layout
 
+\begin_layout Section
+Convergenza degli Integrali
+\end_layout
+
+\begin_layout Subsubsection
+Integrali improri
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tipo integrale
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Forma
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Converge se
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Diverge se
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vicino a 
+\begin_inset Formula $0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\int_{0}^{a}x^{p}\,dx$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p>-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p\leq-1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vicino a 
+\begin_inset Formula $+\infty$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\int_{a}^{+\infty}\frac{1}{x^{p}}\,dx$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p>1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $p\leq1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 Equazioni Differenziali
 \end_layout
@@ -5624,11 +5787,41 @@ Equazioni lineari del
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula $y'(x)+a(x)\,y(x)=f(x)$
+solitamente si presentano nelle forme:
+\begin_inset Tabular
+<lyxtabular version="3" rows="2" columns="1">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" toplineltrim="true" toplinertrim="true" bottomlineltrim="true" bottomlinertrim="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y'(x)=a(x)y(x)+f(x)$
 \end_inset
 
 
-\begin_inset Newline newline
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" toplineltrim="true" toplinertrim="true" bottomlineltrim="true" bottomlinertrim="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $y'(x)+a(x)y(x)=f(x)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
 \end_inset
 
 
@@ -5643,14 +5836,14 @@ Esempi
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $y'-xy=2x$
+\begin_inset Formula $y'=xy+2x$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $y'+\frac{1}{x}*y=4x^{2}$
+\begin_inset Formula $y'+\frac{y}{x}=4x^{2}$
 \end_inset
 
 
@@ -5681,72 +5874,63 @@ Se non è nessuno dei due casi descritti procedo con un nuovo sistema:
 \end_layout
 
 \begin_layout Enumerate
-Trovo una primitiva di 
-\begin_inset Formula $a(x)$
-\end_inset
-
-,
- cioè una funzione 
-\begin_inset Formula $A(x)$
-\end_inset
-
- tale che 
-\begin_inset Formula $A'(x)=a(x)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Moltiplico entrambi i membri per 
-\begin_inset Formula $e^{A(x)}$
-\end_inset
-
-:
- 
-\begin_inset Formula $y'(x)e^{A(x)}+a(x)e^{A(x)}y(x)=f(x)e^{A(x)}$
-\end_inset
-
- (Noto che la parte a sinistra di 
+Sposto a sinistra dell'uguale tutti gli elementi che hanno la 
 \begin_inset Quotes eld
 \end_inset
 
 
-\begin_inset Formula $=$
+\begin_inset Formula $y$
 \end_inset
 
 
 \begin_inset Quotes erd
 \end_inset
 
- altro non è che:
- 
-\begin_inset Formula $[y(x)e^{A(x)}]'$
+,
+ lascio a destra quelli che hanno solamente la 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $x$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Calcolo la primitiva (integrale) di 
+\begin_inset Formula $a(x)$
+\end_inset
+
+ (
+\begin_inset Formula $A(x)=\int a(x)dx$
 \end_inset
 
 )
 \end_layout
 
 \begin_layout Enumerate
-Integro i membri 
-\begin_inset Formula $y(x)e^{A(x)}=\int f(x)e^{A(x)}dx+c$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-Ricavo 
-\begin_inset Formula $y(x)$
-\end_inset
-
- moltiplicando i membri per 
-\begin_inset Formula $e^{-A(x)}$
-\end_inset
-
-:
+Applico la formula:
  
-\begin_inset Formula $y(x)=e^{-A(x)}\int f(x)e^{A(x)}dx+ce^{-A(x)}$
+\begin_inset Formula $y(x)=e^{-A(x)}*\int f(x)*e^{A(x)}dx+ce^{-A(x)}$
+\end_inset
+
+,
+ spesso torna utile risolvere l'integrale per parti i con la sostituzione dell'esponente della 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $e$
+\end_inset
+
+
+\begin_inset Quotes erd
 \end_inset
 
 
@@ -5768,40 +5952,36 @@ Esempio 1
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $A(x)=\int-x\,dx=\frac{x^{2}}{2}$
-\end_inset
-
- (Notiamo che 
-\begin_inset Quotes eld
-\end_inset
-
-
-\begin_inset Formula $+c$
-\end_inset
-
-
-\begin_inset Quotes erd
-\end_inset
-
- non è importante in quanto il risutlato di questo integrale verrà inserito in un altro integrale)
-\end_layout
-
-\begin_layout Enumerate
-\begin_inset Formula $y'(x)e^{-\frac{x^{2}}{2}}-xe^{-\frac{x^{2}}{2}}y(x)=2xe^{-\frac{x^{2}}{2}}$
+Sposto i termini:
+ 
+\begin_inset Formula $y'+xy=2x$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $y(x)e^{-\frac{x^{2}}{2}}=\int2xe^{-\frac{x^{2}}{2}}dx+c=-2e^{-\frac{x^{2}}{2}}+c$
+Calcolo la primitiva:
+ 
+\begin_inset Formula $\int x\,dx=\frac{x^{2}}{2}+c$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $y(x)e^{-\frac{x^{2}}{2}}e^{\frac{x^{2}}{2}}=-2e^{-\frac{x^{2}}{2}}e^{\frac{x^{2}}{2}}+ce^{\frac{x^{2}}{2}}\Rightarrow y(x)=-2+ce^{\frac{x^{2}}{2}}$
+Applico la formula:
+ 
+\begin_inset Formula $y=e^{-\frac{x^{2}}{2}}*\int2x*e^{\frac{x^{2}}{2}}dx+ce^{-\frac{x^{2}}{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Risolvo e scrivo il risultato come:
+ 
+\begin_inset Formula $y(x)=2+\frac{c}{e^{\frac{x^{2}}{2}}}$
 \end_inset
 
 

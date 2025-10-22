@@ -4637,8 +4637,8 @@ Serie armoniche generalizzate
 
 
 \begin_inset Formula $\begin{cases}
-\text{converge} & \text{se }\alpha>1\text{ oppure }\alpha=1\text{ e }\beta>1\\
-\text{diverge} & \text{se }\alpha<1\text{ oppure }\alpha=1\text{ e }\beta\leq1
+\text{converge} & \text{se }\alpha>1\text{\textbf{ oppure }}\alpha=1\text{ e }\beta>1\\
+\text{diverge} & \text{se }\alpha<1\text{\textbf{ oppure }}\alpha=1\text{ e }\beta\leq1
 \end{cases}$
 \end_inset
 
@@ -5080,7 +5080,11 @@ NB.
  
 \series default
 Per capire se converge o diverge semplicemente va trovato un nuovo modo nonostante il criterio usato dentro all'assoluta convergenza abbia dato la divergenza come soluzione.
- (Per martin fai il limite della condizione necessaria di convergenza)
+ (
+\series bold
+Fai il limite della condizione necessaria di convergenza
+\series default
+)
 \end_layout
 
 \end_deeper
