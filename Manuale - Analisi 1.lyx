@@ -6160,7 +6160,7 @@ Per risolvere l'equazione caratteristica devo risolvere in
 
 ):
  
-\begin_inset Formula $\lambda_{1}=\lambda_{2}\Rightarrow y(x)=c_{1}e^{\lambda x}+c_{2}e^{\lambda x}$
+\begin_inset Formula $\lambda_{1}=\lambda_{2}\Rightarrow y(x)=c_{1}e^{\lambda x}+c_{2}xe^{\lambda x}$
 \end_inset
 
 

@@ -6224,7 +6224,7 @@ Esempio 2:
 
 \begin_layout Standard
 \begin_inset Formula $\begin{cases}
-y''+2yì+2y=0\\
+y''+2y'+2y=0\\
 y(0)=1\\
 y'(0)=1
 \end{cases}$
@@ -6370,7 +6370,7 @@ Calcolo la soluzione generale sommando
 \end_inset
 
 
-\begin_inset Formula $\Rightarrow y(x)=y_{o}(x)+y_{p}(x)$
+\begin_inset Formula $\Rightarrow\boldsymbol{y(x)=y_{o}(x)+y_{p}(x)}$
 \end_inset
 
 
@@ -6490,7 +6490,7 @@ Soluzione particolare:
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $y(x)=y_{o}(x)+y_{p}(x)=c_{1}e^{x}+c_{2}xe^{x}+\frac{e^{x}}{6x^{2}}\rightarrow$
+\begin_inset Formula $\boldsymbol{y(x)=}y_{o}(x)+y_{p}(x)\boldsymbol{=c_{1}e^{x}+c_{2}xe^{x}+\frac{e^{x}}{6x^{2}}}\rightarrow$
 \end_inset
 
  E' la soluzione generale.
