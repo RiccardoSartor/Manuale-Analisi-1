@@ -4637,8 +4637,8 @@ Serie armoniche generalizzate
 
 
 \begin_inset Formula $\begin{cases}
-\text{converge} & \text{se }\alpha>1\text{ oppure }\alpha=1\text{ e }\beta>1\\
-\text{diverge} & \text{se }\alpha<1\text{ oppure }\alpha=1\text{ e }\beta\leq1
+\text{converge} & \text{se }\alpha>1\text{\textbf{ oppure }}\alpha=1\text{ e }\beta>1\\
+\text{diverge} & \text{se }\alpha<1\text{\textbf{ oppure }}\alpha=1\text{ e }\beta\leq1
 \end{cases}$
 \end_inset
 
@@ -5080,7 +5080,11 @@ NB.
  
 \series default
 Per capire se converge o diverge semplicemente va trovato un nuovo modo nonostante il criterio usato dentro all'assoluta convergenza abbia dato la divergenza come soluzione.
- (Per martin fai il limite della condizione necessaria di convergenza)
+ (
+\series bold
+Fai il limite della condizione necessaria di convergenza
+\series default
+)
 \end_layout
 
 \end_deeper
@@ -5411,6 +5415,10 @@ variabili separabili
 Equazioni differenziali 
 \series bold
 lineari
+\end_layout
+
+\begin_layout Section
+Equazioni di 1° Grado
 \end_layout
 
 \begin_layout Subsection
@@ -6040,6 +6048,452 @@ y(x_{0})=y_{0}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Section
+Equazioni di 2° Grado
+\end_layout
+
+\begin_layout Standard
+Si presentano nella forma 
+\begin_inset Formula $y''(x)+y'(x)+y(x)=f(x)$
+\end_inset
+
+,
+ possono avere 
+\begin_inset Formula $f(x)=0$
+\end_inset
+
+,
+ in questo caso sono dette omogenee.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+NB
+\series default
+.
+ Lineari si intende che la 
+\begin_inset Formula $y(x)$
+\end_inset
+
+ e le sue derivate non sono moltiplicate e divise tra loro,
+ NON sono nemmeno moltiplicate per altri reali.
+\end_layout
+
+\begin_layout Subsection
+Omogenee
+\end_layout
+
+\begin_layout Standard
+Si presentano nella forma 
+\begin_inset Formula $ay''(x)+by'(x)+cy(x)=0$
+\end_inset
+
+.
+ con 
+\begin_inset Formula $a,b,c\in\mathbb{R}.$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+NB
+\series default
+.
+ Possono mancare termini,
+ non può mai mancare 
+\begin_inset Formula $y''(x)$
+\end_inset
+
+,
+ altrimenti sarebbe di 1° Grado).
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Soluzione generale:
+ 
+\begin_inset Formula $y(x)=c_{1}y_{1}(x)+c_{2}y_{2}(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Per risolvere l'equazione caratteristica devo risolvere in 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+:
+ 
+\begin_inset Formula $az^{2}+bz+z=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+2 soluzioni reali distinte (
+\begin_inset Formula $\Delta>0$
+\end_inset
+
+):
+ 
+\begin_inset Formula $\lambda_{1},\lambda_{2}\Rightarrow y(x)=c_{1}e^{\lambda_{1}x}+c_{2}e^{\lambda_{2}x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+2 soluzioni reali coincidenti (
+\begin_inset Formula $\Delta=0$
+\end_inset
+
+):
+ 
+\begin_inset Formula $\lambda_{1}=\lambda_{2}\Rightarrow y(x)=c_{1}e^{\lambda x}+c_{2}e^{\lambda x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+2 soluzioni complesse (
+\begin_inset Formula $\Delta<0$
+\end_inset
+
+):
+ 
+\begin_inset Formula $\lambda_{1/2}=\alpha\pm i\beta\Rightarrow y(x)=c_{1}e^{\alpha x}cos(\beta x)+c_{2}e^{\alpha x}sin(\beta x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esempio 1:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y''-5y'+4y=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Eq.
+ caratteristica:
+ 
+\begin_inset Formula $z^{2}-5z+4=0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\Delta=9\Rightarrow\lambda_{1/2}=\{1,4\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Soluzione generale:
+ 
+\begin_inset Formula $y(x)=c_{1}e^{4x}+c_{2}e^{x}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Esempio 2:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\begin{cases}
+y''+2yì+2y=0\\
+y(0)=1\\
+y'(0)=1
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Eq.
+ caratteristica:
+ 
+\begin_inset Formula $z^{2}+2x+2=0$
+\end_inset
+
+,
+ 
+\begin_inset Formula $\Delta=-4\Rightarrow\lambda_{1/2}=\frac{-2\pm i\sqrt{4}}{2}=\{-1+i,-1-i\}$
+\end_inset
+
+,
+ con 
+\begin_inset Formula $\alpha=-1,\beta=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Soluzione generale:
+ 
+\begin_inset Formula $y=c_{1}e^{-x}cos(x)+c_{2}e^{-x}sin(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dobbiamo ora risolvere il problema di Cauchy:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y'=[c_{1}e^{-x}cosx]'+[c_{2}e^{-x}sinx]'=-c_{1}e^{-x}cosx-c_{1}e^{x}sinx-c_{2}e^{-x}sinx+c_{2}e^{-x}cosx=c_{1}(-e^{-x}cosx-e^{x}sinx)+c_{2}(-e^{-x}sinx+e^{-x}cosx)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y(0)=1\iff c_{1}e^{-0}cos(0)+c_{2}e^{-0}sin(0)=1\iff c_{1}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y'(0)=1\iff c_{1}(-e^{-0}cos(0)-e^{0}sin(0))+c_{2}(-e^{-0}sin(0)+e^{-0}cos(0))=1\iff c_{1}(-1)+c_{2}(1)=1\iff c_{2}=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Soluzione particolare:
+ 
+\begin_inset Formula $y=e^{-x}cosx+2e^{-x}sinx=e^{-x}(cosx+2sinx)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Variazione delle costanti
+\end_layout
+
+\begin_layout Standard
+Forma:
+ 
+\begin_inset Formula $y''(x)+by'(x)+cy(x)=f(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Processo risolutivo:
+\end_layout
+
+\begin_layout Enumerate
+Determino la soluzione generale dell'equazione omogenea associata:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $y_{o}(x)=c_{1}y_{1}(x)+c_{2}y_{2}(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Trovo una soluzione particolare della forma:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $y_{p}(x)=c_{1}(x)y_{1}(x)+c_{2}(x)y_{2}(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Per trovare 
+\begin_inset Formula $c_{1}(x)$
+\end_inset
+
+ e 
+\begin_inset Formula $c_{2}(x)$
+\end_inset
+
+ risolvo:
+\begin_inset Formula $\begin{cases}
+c_{1}'(x)y_{1}(x)+c_{2}'(x)y_{2}(x)=0\\
+c_{1}'(x)y_{1}'(x)+c_{2}'(x)y_{2}'(x)=f(x)
+\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+Calcolo la soluzione generale sommando 
+\begin_inset Formula $y_{0}(x)$
+\end_inset
+
+ e 
+\begin_inset Formula $y_{p}(x)$
+\end_inset
+
+
+\begin_inset Formula $\Rightarrow y(x)=y_{o}(x)+y_{p}(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esempio:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y''-2y'+y=\frac{e^{x}}{x^{4}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $z^{2}-z+1=0\Rightarrow\Delta=0\Rightarrow\lambda_{1/2}=1$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $y_{o}(x)=c_{1}e^{x}+c_{2}xe^{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\begin{cases}
+c_{1}'(x)e^{x}+c_{2}'(x)xe^{x}=0\\
+c_{1}'(x)e^{x}+c_{2}'(x)[e^{x}+xe^{x}]=\frac{e^{x}}{x^{4}}
+\end{cases}$
+\end_inset
+
+
+\begin_inset Formula $\begin{cases}
+c_{1}'(x)=-\frac{1}{x^{3}}\\
+c_{2}'(x)=\frac{1}{x^{4}}
+\end{cases}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Per trovare 
+\begin_inset Formula $c_{1}(x)$
+\end_inset
+
+ e 
+\begin_inset Formula $c_{2}(x)$
+\end_inset
+
+ calcolo le primitive di 
+\begin_inset Formula $c_{1}'(x)$
+\end_inset
+
+ e 
+\begin_inset Formula $c_{2}'(x)$
+\end_inset
+
+:
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $c_{1}(x)=\int c_{1}'(x)dx=-\int\frac{1}{x^{3}}dx=\frac{1}{2x^{2}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $c_{2}(x)=\int c_{2}'(x)dx=\int\frac{1}{x^{4}}dx=\frac{1}{3x^{3}}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+NB.
+
+\series default
+ Non servono i 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Formula $+c$
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ in quanto ci interessa una soluzione particolare.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Soluzione particolare:
+ 
+\begin_inset Formula $y_{p}(x)=\frac{1}{2x^{2}}e^{x}-\frac{1}{3x^{3}}xe^{x}=\frac{e^{x}}{6x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y(x)=y_{o}(x)+y_{p}(x)=c_{1}e^{x}+c_{2}xe^{x}+\frac{e^{x}}{6x^{2}}\rightarrow$
+\end_inset
+
+ E' la soluzione generale.
 \end_layout
 
 \end_body
