@@ -1226,7 +1226,7 @@ Relazioni ricorsive
 \end_layout
 
 \begin_layout Enumerate
-\begin_inset Formula $n!=n*(x-1)!$
+\begin_inset Formula $n!=n*(n-1)!$
 \end_inset
 
 
@@ -5396,47 +5396,8 @@ Vicino a
 <cell alignment="left" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Itemize
-se la potenza 
-\begin_inset Formula $x^{-\alpha}$
-\end_inset
-
- è 
-\begin_inset Quotes eld
-\end_inset
-
-troppo aggressiva
-\begin_inset Quotes erd
-\end_inset
-
- (
-\begin_inset Formula $\alpha>1$
-\end_inset
-
-) nessun log ti salva.
-\end_layout
-
-\begin_layout Itemize
-se 
-\begin_inset Formula $\alpha<1$
-\end_inset
-
- seo già al sicuro,
- il log non importa.
-\end_layout
-
-\begin_layout Itemize
-Se sei nel caso critico 
-\begin_inset Formula $\alpha=1$
-\end_inset
-
-,
- allora il log decide:
- serve 
-\begin_inset Formula $\beta>1$
-\end_inset
-
-.
+\begin_layout Plain Layout
+*
 \end_layout
 
 \end_inset
@@ -5571,6 +5532,61 @@ Vicino a
 \end_inset
 
 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+*
+\end_layout
+
+\begin_layout Itemize
+se la potenza 
+\begin_inset Formula $x^{-\alpha}$
+\end_inset
+
+ è 
+\begin_inset Quotes eld
+\end_inset
+
+troppo aggressiva
+\begin_inset Quotes erd
+\end_inset
+
+ (
+\begin_inset Formula $\alpha>1$
+\end_inset
+
+) nessun log ti salva.
+\end_layout
+
+\begin_layout Itemize
+se 
+\begin_inset Formula $\alpha<1$
+\end_inset
+
+ seo già al sicuro,
+ il log non importa.
+\end_layout
+
+\begin_layout Itemize
+Se sei nel caso critico 
+\begin_inset Formula $\alpha=1$
+\end_inset
+
+,
+ allora il log decide:
+ serve 
+\begin_inset Formula $\beta>1$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Part
